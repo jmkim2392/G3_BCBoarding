@@ -7,7 +7,12 @@
 
 
 /* index.html */
-
+#slopeButton {
+       background-image: url("../Images/mountain1.jpg");
+    background-repeat: no-repeat;
+    width:100%;
+    height:30em;
+}
 
 /* homepage banner */
 
@@ -61,7 +66,7 @@
 }
 
 #slopes {
-    background-image: url("../Images/mountain0.jpeg");
+    background-image: url("../Images/mountain1.jpg");
     background-repeat: no-repeat;
 }
 
@@ -79,9 +84,8 @@
     padding: 50px;
     text-align: center;
     text-transform: uppercase;
-    background-color: grey;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    height: 300px;
+    
 }
 
 .headers {
@@ -95,7 +99,7 @@
 
 /* hover functions on headers */
 
-#slopes:hover {
+/*#slopes:hover {
     background-image: url("../Images/mountainGrey.jpg");
     background-repeat: no-repeat;
     opacity: 0.8;
@@ -111,7 +115,7 @@
     background-image: url("../Images/lodgeGrey.jpg");
     background-repeat: no-repeat;
     opacity: 0.8;
-}
+}*/
 
 .home-content {
     margin: 20px;
@@ -290,6 +294,39 @@ nav a:visited {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+}
+
+/**/
+
+.gearContent{
+    position:relative;
+    text-align:center;
+    width:100%;
+    height:100%;
+    
+}
+.gearContent .accordionHeader {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    height:100px;
+}
+.gearContent .accordionHeader#outerwearHeader {
+    /*background-image:url("../Images/outerwearbrands.jpg");*/
+    background-repeat: no-repeat;
+    
+}
+
+.accordionHeader span {
+    position:relative;
+    top:20px;
+    font-weight: bolder;
+    color:black;
+    font-size:3em;
+}
+.accordionContent {
+    display:none;
 }
 
 
