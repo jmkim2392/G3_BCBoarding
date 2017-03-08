@@ -7,12 +7,14 @@
 
 
 /* index.html */
+
 #slopeButton {
-       background-image: url("../Images/mountain1.jpg");
+    background-image: url("../Images/mountain1.jpg");
     background-repeat: no-repeat;
-    width:100%;
-    height:30em;
+    width: 100%;
+    height: 30em;
 }
+
 
 /* homepage banner */
 
@@ -85,7 +87,6 @@
     text-align: center;
     text-transform: uppercase;
     height: 300px;
-    
 }
 
 .headers {
@@ -98,6 +99,7 @@
 
 
 /* hover functions on headers */
+
 
 /*#slopes:hover {
     background-image: url("../Images/mountainGrey.jpg");
@@ -257,13 +259,16 @@ nav a:visited {
 
 .subNavbar {
     background-color: #437C9D;
+}
+
+.subNavContent {
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
 }
 
-.subNavbar li {
+.subNavbar .subNavContent li {
     position: relative;
     display: inline;
     list-style-type: none;
@@ -296,37 +301,39 @@ nav a:visited {
     padding-bottom: 20px;
 }
 
+
 /**/
 
-.gearContent{
-    position:relative;
-    text-align:center;
-    width:100%;
-    height:100%;
-    
+.gearContent {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
+
 .gearContent .accordionHeader {
-    background-color:#d3d3d3;
+    background-color: #d3d3d3;
     padding: 2px;
     cursor: pointer;
     font-weight: bold;
-    height:100px;
+    height: 100px;
 }
+
 .gearContent .accordionHeader#outerwearHeader {
     /*background-image:url("../Images/outerwearbrands.jpg");*/
     background-repeat: no-repeat;
-    
 }
 
 .accordionHeader span {
-    position:relative;
-    top:20px;
+    position: relative;
+    top: 20px;
     font-weight: bolder;
-    color:black;
-    font-size:3em;
+    color: black;
+    font-size: 3em;
 }
+
 .accordionContent {
-    display:none;
+    display: none;
 }
 
 
@@ -386,8 +393,10 @@ nav a:visited {
     font-weight: bold;
 }
 
-.forumComment table, td, th {
-    border:1px solid black;
+.forumComment table,
+td,
+th {
+    border: 1px solid black;
 }
 
 
