@@ -334,6 +334,9 @@ nav a:visited {
 
 .accordionContent {
     display: none;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -343,6 +346,8 @@ nav a:visited {
     margin-top: 20px;
     max-width: 100%;
     height: auto;
+    
+    
 }
 
 .Snowboard {
