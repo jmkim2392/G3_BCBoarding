@@ -169,6 +169,8 @@
     border-radius: 0 !important;
 }
 
+.navbar-inverse {}
+
 body {
     background: #ccc;
     font-family: helvetica, arial, serif;
@@ -183,11 +185,14 @@ body {
     margin-top: 0;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:900px) {
     .dropdown:hover .dropdown-menu {
         width: 100%;
         text-align: center;
-        position:relative;    
+        position: relative;
+    }
+    .resize {
+        display: block;
     }
 }
 
@@ -196,6 +201,7 @@ body {
     width: 100%;
     margin-bottom: -25px;
     position: static;
+    height: 65px;
 }
 
 ul {
