@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset html */
 
 * {
@@ -382,4 +383,385 @@ th {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+=======
+/* Reset html */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* index.html */
+
+
+/* homepage banner */
+
+#home-banner {
+    background-image: url("../Images/jump21.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#home-center {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#banner-text {
+    background-color: rgba(220, 220, 220, 0.04);
+    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 75px;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-weight: 800;
+    color: white;
+}
+
+
+/* button to navigate to home content */
+
+#home-button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 90%)
+}
+
+
+/* banner images for home headings */
+
+#gear {
+    background-image: url("../Images/snowboards01.jpg");
+    background-repeat: no-repeat;
+}
+
+#slopes {
+    background-image: url("../Images/mountain0.jpeg");
+    background-repeat: no-repeat;
+}
+
+#about {
+    background-image: url("../Images/lodge0.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+
+/* alignment for headings */
+
+.header-pic {
+    background-size: 100%;
+    opacity: 0.8;
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: grey;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.headers {
+    opacity: 1.5;
+    color: black;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 55px;
+}
+
+
+/* hover functions on headers */
+
+#slopes:hover {
+    background-image: url("../Images/mountainGrey.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+#gear:hover {
+    background-image: url("../Images/snowboardsGrey.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+#about:hover {
+    background-image: url("../Images/lodgeGrey.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.home-content {
+    margin: 20px;
+}
+
+
+/* banner for each sub page */
+
+.bannerGear {
+    background-image: url("../Images/snowboards.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bannerAbout {
+    background-image: url("../Images/lodge.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bannerSlopes {
+    background-image: url("../Images/mountain1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bannerForum {
+    background-image: url("../Images/lifts.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bannerMember {
+    background-image: url("../Images/stunt.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+/* Navigation Bar */
+
+* {
+    border-radius: 0 !important;
+}
+
+.navbar-inverse {}
+
+body {
+    background: #ccc;
+    font-family: helvetica, arial, serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+@media only screen and (max-width:900px) {
+    .dropdown:hover .dropdown-menu {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    .resize {
+        display: block;
+    }
+}
+
+.wrap {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: -25px;
+    position: static;
+    height: 65px;
+}
+
+ul {
+    padding-top: 5px;
+}
+
+.resize {
+    height: 60px;
+    width: 70px;
+}
+
+
+/* positioning for page content */
+
+.contentMid {
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto 20px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* Gear page Images */
+
+.Outerwear {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Snowboard {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Bindings {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Boots {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Slopes page Images */
+
+.Location {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Slopes {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Forum Page */
+
+.forumContent {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.forumboxtitle {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.forumComment table,
+td,
+th {
+    border: 1px solid black;
+}
+
+
+/* Membership Page */
+
+.signinpage {
+    width: 360px;
+    padding: 100px 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #3D718F;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #154560;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #3D718F;
+    text-decoration: none;
+}
+
+.signintitle {
+    color: #3D718F;
+    font-weight: bold;
+}
+
+#bodysignin .contentMid {
+    background: #3D718F;
+    background: linear-gradient(to left, #3D718F, #154560);
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* footer */
+
+.footer {
+    position: static;
+    bottom: 0;
+    padding: 20px;
+    background-color: #606466;
+    color: lightgray;
+}
+
+.footerContent {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+>>>>>>> gear
 }
