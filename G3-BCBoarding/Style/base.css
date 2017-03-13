@@ -183,6 +183,14 @@ body {
     margin-top: 0;
 }
 
+@media only screen and (max-width:600px) {
+    .dropdown:hover .dropdown-menu {
+        width: 100%;
+        text-align: center;
+        position:static;    
+    }
+}
+
 .wrap {
     display: inline-block;
     width: 100%;
