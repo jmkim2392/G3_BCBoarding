@@ -170,8 +170,7 @@
     border-radius: 0 !important;
 }
 
-.navbar-inverse {
-}
+.navbar-inverse {}
 
 body {
     background: #ccc;
@@ -183,12 +182,13 @@ body {
 }
 
 .dropdown:hover .dropdown-menu {
-    background-color:#222;
+    background-color: #222;
     display: block;
-    margin-top: 5px;
+    margin-top: 0px;
 }
-.dropdown:hover .dropdown-menu a{
-    color:white;
+
+.dropdown:hover .dropdown-menu a {
+    color:lightgrey;
 }
 
 @media only screen and (max-width:900px) {
@@ -196,9 +196,7 @@ body {
         width: 100%;
         text-align: center;
         position: relative;
-    }
-    .resize {
-        display: block;
+        margin-top:0px;
     }
 }
 
