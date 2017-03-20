@@ -342,6 +342,26 @@ background-color: white;
     height: auto;
 }
 
+.SlopesCard img {
+    height:465px;
+    width:465px;
+}
+.SlopesCard .SlopesText {
+    position: relative;
+    visibility: hidden;
+    bottom:430px;
+    font-size: 4em;
+    background-color:white;
+    opacity:1;
+}
+
+.SlopesCard:hover img {
+    opacity: 0.3;
+}
+.SlopesCard:hover .SlopesText {
+    visibility:visible;
+    opacity: 1;
+}
 
 /* Forum Page */
 
