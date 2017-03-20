@@ -8,75 +8,91 @@
     <link rel="stylesheet" type="text/css" href="Style/base.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/lib/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="script.js" type="text/javascript">
+    </script>
 </head>
 
 <body>
+    <!-- navigation bar -->
+    <div class="wrap"> <span class="decor"></span>
+        <nav class="navbar navbar-inverse narvar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <img class="resize" src="Images/BCBoardingLogo.png" alt="Logo"> </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="slopes.html">Slopes <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Whistler</a></li>
+                                <li><a href="#">Grouse</a></li>
+                                <li><a href="#">Seymour</a></li>
+                                <li><a href="#">Cypress</a></li>
+                                <li><a href="#">Big White</a></li>
+                                <li><a href="#">Sun Peaks</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="gear.html">Gear <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Necessities</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Shops</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about_us.html">About us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="forum.html"><span class="glyphicon glyphicon-user"></span> Forum</a></li>
+                        <li><a href="membership.html"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
     <!-- div header-->
     <header id="home-banner">
         <div id="home-center">
             <h1 id="banner-text">BC Boarding</h1> <a id="home-button" href="#home-body">To Page</a> </div>
     </header>
-    <!-- navigation bar -->
-    <nav class="navbar navbar-nav navbar-fixed-top">
-        <div class="navbarContent">
-            <ul>
-                <li class="navbar-left"><img src="Images/BCBoardingLogo.png" alt="Logo"></li>
-                <li id="homeButton" class="navbar-left"><a href="index.html"><i class="fa fa-home fa-2x" ></i></a></li>
-                <li class="navbartext-left"><a href="gear.html">Gear</a></li>
-                <li class="navbartext-left"><a href="slopes.html">Slopes</a></li>
-                <li class="navbartext-left"><a href="about_us.html">About Us</a></li>
-                <li id="nav-space" class="navbar-right"><a href="membership.html">Membership</a></li>
-                <li class="navbar-right"><a href="forum.html">Forum</a></li>
-            </ul>
-        </div>
-    </nav>
     <!-- content middle -->
     <div id="home-body">
         <div id="gear" class="header-pic"><a href="gear.html" class="headers">Gear</a></div>
         <div id="slopes" class="header-pic"><a href="slopes.html" class="headers">Slopes</a></div>
-           <div class="panel">
-               <div class="contentMid">
-        <div class="row">
-            <div class="col-md-4"> <img class="Location img-fluid" src="Images/toWhistler.JPG" alt="LocationMap"> </div>
-            <div class="col-md-8">
-                <h3>Location</h3>
-                <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
+        <div class="panel">
+            <div class="contentMid">
+                <div class="row">
+                    <div class="col-md-4"> <img class="Location img-fluid" src="Images/toWhistler.JPG" alt="LocationMap"> </div>
+                    <div class="col-md-8">
+                        <h3>Location</h3>
+                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3>Slope Info</h3>
+                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
+                    </div>
+                    <div class="col-md-4"> <img class="Slopes img-fluid" src="Images/whistlermap.jpg" alt="Whistler Slopes"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Weather</h3>
+                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Comments</h3>
+                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-                <h3>Slope Info</h3>
-                <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
-            </div>
-            <div class="col-md-4"> <img class="Slopes img-fluid" src="Images/whistlermap.jpg" alt="Whistler Slopes"> </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Weather</h3>
-                <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Comments</h3>
-                <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
-            </div>
-        </div>
-    </div>
         </div>
         <div id="about" class="header-pic"><a href="about_us.html" class="headers">About Us</a></div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <!-- footer -->
     <div class="footer">
         <div class="footerContent">

@@ -169,89 +169,48 @@
 
 /* Navigation Bar */
 
-nav {
-    background-color: #606466;
-    left: 0;
-    opacity: 0.9;
+* {
+    border-radius: 0 !important;
+}
+
+@media only screen and (max-width:900px) {
+    .dropdown:hover .dropdown-menu {
+        width: 100%;
+        text-align: center;
+        position:relative;    
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+}
+
+.wrap {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: -25px;
+    position: static;
+    text-transform: uppercase;
+    font-family: helvetica, arial, serif;
+    text-align: center;
     height: 65px;
 }
 
-nav li {
-    display: inline;
-    list-style-type: none;
-    padding: 10px;
+ul {
+    padding-top: 5px;
 }
 
-nav a:visited {
-    color: lightgray;
-    text-decoration: none;
-}
-
-.navbarContent {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#nav-space {
-    margin-right: 1px;
-}
-
-.navbar-right {
-    margin-top: 5px;
-}
-
-.navbar-right a {
-    padding: 25px 15px 25px 15px;
-    font-size: 1em;
-    color: lightgray;
-    font-weight: bolder;
-    margin: -10px;
-    position: relative;
-    top: 7px;
-}
-
-.navbar-left img {
+.resize {
     height: 60px;
-    position: relative;
-    bottom: 5px;
+    width: 70px;
 }
 
-.navbartext-left a {
-    padding: 25px 15px 25px 15px;
-    font-size: 1em;
-    color: lightgray;
-    font-weight: bolder;
-    position: relative;
-    top: 22px;
-    left: -11px;
-    margin-right: -24px;
-}
-
-.navbartext-left a:hover {
-    background-color: black;
-    text-decoration: none;
-    color: white;
-}
-
-.navbar-right a:hover {
-    background-color: black;
-    text-decoration: none;
-    color: white;
-}
-
-#homeButton {
-    padding: 11px;
-    font-size: 1.5em;
-    color: lightgray;
-    font-weight: bolder;
-    position: relative;
-}
-
-#homeButton:hover {
-    background-color: black;
-    text-decoration: none;
-    color: white;
+.navbar-inverse {
+background-color: white;
+    color:black;
+    
 }
 
 
@@ -383,6 +342,26 @@ nav a:visited {
     height: auto;
 }
 
+.SlopesCard img {
+    height:465px;
+    width:465px;
+}
+.SlopesCard .SlopesText {
+    position: relative;
+    visibility: hidden;
+    bottom:430px;
+    font-size: 4em;
+    background-color:white;
+    opacity:1;
+}
+
+.SlopesCard:hover img {
+    opacity: 0.3;
+}
+.SlopesCard:hover .SlopesText {
+    visibility:visible;
+    opacity: 1;
+}
 
 /* Forum Page */
 
