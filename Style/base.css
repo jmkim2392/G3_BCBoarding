@@ -435,7 +435,11 @@ th {
     background: linear-gradient(to left, #3D718F, #154560);
     font-family: "Roboto", sans-serif;
 }
-
+.error{
+	font-weight:bold;
+	visibility:hidden;
+	color:red;
+}
 
 /* footer */
 
