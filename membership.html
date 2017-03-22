@@ -5,6 +5,7 @@
     <title>Membership</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="Style/base.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> </head>
@@ -28,18 +29,18 @@
     </nav>
     <div class="contentMid">
         <div class="form">
-            <form class="registrationform" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+            <form class="registrationform" name="form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
                 <p class="signintitle">Sign-up</p>
-                <input type="text" placeholder="Name" />
-                <input type="password" placeholder="Password" />
-                <input type="text" placeholder="Email address" />
+                <input onblur="validatecname();" id="username" name="id" type="text" placeholder="Name" /><span id="errcname" class="error"> please enter a Username</span>
+                <input type="password" onblur="validatecpass();" id="cpassword" placeholder="Password" /> <span id="errcpass" class="error"> please enter a Password</span>
+                <input type="text" onblur="validateemail();" id="email" placeholder="Email address" /> <span id="erremail" class="error"> please enter a Valid Email Address</span>
                 <button>create</button>
                 <p class="message">Already registered? <a href="#">Sign In</a></p>
             </form>
-            <form class="loginpage" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+            <form class="loginpage" name="loginpage" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
                 <p class="signintitle"> Log-In</p>
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
+                <input type="text" id="name" onblur="validatename();" placeholder="Username" /> <span id="errname" class="error"> please enter a Username</span>
+                <input type="password" id="pass" onblur="validatepass();" placeholder="Password" /> <span id="errpass" class="error"> please enter a password</span>
                 <button>login</button>
                 <p class="message">Not registered? <a href="#">Create an account</a></p>
             </form>
