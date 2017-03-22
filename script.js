@@ -10,19 +10,18 @@ $(document).ready(function () {
         }
         else {
             $(".accordionContent").hide(500, "swing")
-        }
+            }
     });
 });
 
 function validatecname() {
-    var regexp1 = /^[a-z0-9-_\.]+$/i;
     var errid = document.getElementById("errcname");
     var id = document.getElementById("username");
-    if (regexp1.test(document.getElementById("username").value)) {
-        errid.setAttribute("style", "visibility:hidden");
+    if (id.value === "") {
+        errid.setAttribute("style", "visibility:visible");
     }
     else {
-        errid.setAttribute("style", "visibility:visible");
+        errid.setAttribute("style", "visibility:hidden");
     }
 }
 
