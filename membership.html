@@ -6,9 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="script.js"></script>
+	<script src=jquery-3.2.0.min.js></script>
     <link rel="stylesheet" type="text/css" href="Style/base.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
+
+	  
+  
+  <link rel="stylesheet" href="/resources/demos/style.css">
+</head>
 
 <body>
     <!-- div header-->
@@ -28,14 +37,27 @@
         </div>
     </nav>
     <div class="contentMid">
+	<div id ="passreqs"> 
+				<ul id="passreqlist">
+				<li>Must contain atleast 1 capital letter </li>
+				<li>Must contain atleast 1 lowercase letter</li>
+				<li>Must contain atleast 1 number </li>
+				<li> Must contain atleast 1 special charector</li>
+				<li> Must contain atleast 8 characers</li>
+				</ul>
+				
+				</div>
         <div class="form">
             <form class="registrationform" name="form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+			<fieldset>
                 <p class="signintitle">Sign-up</p>
                 <input onblur="validatecname();" id="username" name="id" type="text" placeholder="Name" /><span id="errcname" class="error"> please enter a Username</span>
                 <input type="password" onblur="validatecpass();" id="cpassword" placeholder="Password" /> <span id="errcpass" class="error"> please enter a Password</span>
-                <input type="text" onblur="validateemail();" id="email" placeholder="Email address" /> <span id="erremail" class="error"> please enter a Valid Email Address</span>
+                <input type="text" onblur="validateemail();" id="email" title="We do not send spam" placeholder="Email address" /> <span id="erremail" class="error"> please enter a Valid Email Address</span>
+				<input placeholder="birthdate" type= "text" id="date"/>
                 <button>create</button>
                 <p class="message">Already registered? <a href="#">Sign In</a></p>
+				</fieldset>
             </form>
             <form class="loginpage" name="loginpage" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
                 <p class="signintitle"> Log-In</p>
@@ -63,6 +85,8 @@
             </div>
         </div>
     </div>
+	<p id="paragraph"> this is a paragraph</p>
+	<script type="text/javascript" src="jq.js"></script>
 </body>
 
 </html>

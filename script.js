@@ -12,12 +12,13 @@ $(document).ready(function () {
             $(".accordionContent").hide(500, "swing")
         }
     });
-});
+
+	});
 
 function validatecname() {
     var regexp1 = /^[a-z0-9-_\.]+$/i;
     var errid = document.getElementById("errcname");
-    var id = document.getElementById("username");
+   
     if (regexp1.test(document.getElementById("username").value)) {
         errid.setAttribute("style", "visibility:hidden");
     }
@@ -27,14 +28,18 @@ function validatecname() {
 }
 
 function validatecpass() {
-    var regexp1 = /^[a-z0-9]+$/i;
+    var regexp1 = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
     var errid = document.getElementById("errcpass");
-    var id = document.getElementById("cpassword");
+	var req = document.getElementById("passreqlist");
+   
     if (regexp1.test(document.getElementById("cpassword").value)) {
         errid.setAttribute("style", "visibility:hidden");
+		req.setAttribute("style", "visibility:hidden");
+		
     }
     else {
         errid.setAttribute("style", "visibility:visible");
+		req.setAttribute("style", "visibility:visible");
     }
 }
 
@@ -53,7 +58,7 @@ function validateemail() {
 function validatename() {
     var regexp1 = /^[a-z0-9-_\.]+$/;
     var errid = document.getElementById("errname");
-    var id = document.getElementById("name");
+   
     if (regexp1.test(document.getElementById("name").value)) {
         errid.setAttribute("style", "visibility:hidden");
     }
@@ -63,9 +68,9 @@ function validatename() {
 }
 
 function validatepass() {
-    var regexp1 = /^[a-z0-9]+$/i;
+    var regexp1 = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
     var errid = document.getElementById("errpass");
-    var id = document.getElementById("pass");
+   
     if (regexp1.test(document.getElementById("pass").value)) {
         errid.setAttribute("style", "visibility:hidden");
     }

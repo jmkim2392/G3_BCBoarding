@@ -438,7 +438,9 @@ th {
 .error{
 	font-weight:bold;
 	visibility:hidden;
-	color:red;
+	color:blue;
+	float:left;
+	font-size: small;
 }
 
 /* footer */
@@ -456,3 +458,26 @@ th {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+#passreqlist{
+	font-weight:bold;
+	float:right;
+	margin-top: 10em;
+	margin-right: 1em;
+	list-style-type: none;
+	background-color: #94bbd1;
+	list-style-type: none;
+	visibility:hidden;
+	
+}
+
+.ui-datepicker{
+	
+  z-index: 1000;
+  background-color:white;
+  color: black;
+}
+
+
