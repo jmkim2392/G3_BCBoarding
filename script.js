@@ -28,6 +28,8 @@ $(window).scroll(function () {
     });
 });
 
+/* Form validation for Membership */
+
 function validatecname() {
     var regexp1 = /^[a-z0-9-_\.]+$/i;
     var errid = document.getElementById("errcname");
