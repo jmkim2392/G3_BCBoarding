@@ -1,537 +1,484 @@
-/* Reset html */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* index.html */
-
-
-/* homepage banner */
-
-#home-banner {
-    background-image: url("../Images/jump21.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-#home-center {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
-#banner-text {
-    background-color: rgba(220, 220, 220, 0.04);
-    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 75px;
-    text-transform: uppercase;
-    letter-spacing: 3.5px;
-    font-weight: 800;
-    color: white;
-}
-
-
-/* button to navigate to home content */
-
-#home-button {
-    border: 2px solid #fff;
-    background-color: transparent;
-    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    letter-spacing: 2px;
-    color: #fff;
-    padding: 4px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 90%)
-}
-
-
-/* banner images for home headings */
-
-#gear {
-    background-image: url("../Images/snowboards01.jpg");
-    background-repeat: no-repeat;
-}
-
-#slopes {
-    background-image: url("../Images/mountain0.jpeg");
-    background-repeat: no-repeat;
-}
-
-#about {
-    background-image: url("../Images/lodge0.jpeg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
-
-
-/* alignment for headings */
-
-.header-pic {
-    background-size: 100%;
-    opacity: 0.8;
-    padding: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: grey;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.headers {
-    opacity: 1.5;
-    color: black;
-    font-size: 2.5em;
-    font-weight: bold;
-    padding: 55px;
-}
-
-.home-content {
-    margin: 20px;
-}
-
-
-/* banner for each sub page */
-
-.bannerGear {
-    background-image: url("../Images/snowboards.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.bannerAbout {
-    background-image: url("../Images/lodge.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.bannerSlopes {
-    background-image: url("../Images/mountain1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.bannerForum {
-    background-image: url("../Images/lifts.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.bannerMember {
-    background-image: url("../Images/stunt.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-
-/* Navigation Bar */
-
-* {
-    border-radius: 0;
-}
-
-.navbar {
-    height: 60px;
-    position: fixed;
-}
-
-body {
-    background: #ccc;
-    font-family: helvetica, arial, serif;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: -10px;
-}
-
-.dropdown:hover .dropdown-menu {
-    background-color: #222;
-    display: block;
-    margin-top: 0px;
-}
-
-.dropdown:hover .dropdown-menu a {
-    color: dimgrey;
-}
-
-@media only screen and (max-width:900px) {
-    .dropdown:hover .dropdown-menu {
-        width: 100%;
-        text-align: center;
-        position: relative;
-        margin-top: 0px;
+    /* Reset html */
+    
+    * {
+        margin: 0;
+        padding: 0;
     }
-    .navbar-inverse {
+    /* index.html */
+    /* homepage banner */
+    
+    #home-banner {
+        background-image: url("../Images/jump21.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    #home-center {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+    
+    #banner-text {
+        background-color: rgba(220, 220, 220, 0.04);
+        font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 75px;
+        text-transform: uppercase;
+        letter-spacing: 3.5px;
+        font-weight: 800;
+        color: white;
+    }
+    /* button to navigate to home content */
+    
+    #home-button {
+        border: 2px solid #fff;
+        background-color: transparent;
+        font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        letter-spacing: 2px;
+        color: #fff;
+        padding: 4px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 90%)
+    }
+    /* banner images for home headings */
+    
+    #gear {
+        background-image: url("../Images/snowboards01.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    #slopes {
+        background-image: url("../Images/mountain0.jpeg");
+        background-repeat: no-repeat;
+    }
+    
+    #about {
+        background-image: url("../Images/lodge0.jpeg");
+        background-repeat: no-repeat;
+        width: 100%;
         height: auto;
     }
-}
+    /* alignment for headings */
+    
+    .header-pic {
+        background-size: 100%;
+        opacity: 0.8;
+        padding: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: grey;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    .headers {
+        opacity: 1.5;
+        color: black;
+        font-size: 2.5em;
+        font-weight: bold;
+        padding: 55px;
+    }
+    
+    .home-content {
+        margin: 20px;
+    }
+    /* banner for each sub page */
+    
+    .bannerGear {
+        background-image: url("../Images/snowboards.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    .bannerAbout {
+        background-image: url("../Images/lodge.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    .bannerSlopes {
+        background-image: url("../Images/mountain1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    .bannerForum {
+        background-image: url("../Images/lifts.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    .bannerMember {
+        background-image: url("../Images/stunt.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    /* Navigation Bar */
+    
+    * {
+        border-radius: 0;
+    }
+    
+    .navbar {
+        height: 60px;
+        position: fixed;
+    }
+    
+    body {
+        background: #ccc;
+        font-family: helvetica, arial, serif;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: -10px;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        background-color: #222;
+        display: block;
+        margin-top: 0px;
+    }
+    
+    .dropdown:hover .dropdown-menu a {
+        color: dimgrey;
+    }
 
-.wrap {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: -25px;
-    height: 60px;
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    z-index: 9999;
-}
-
-ul {
-    padding-top: 8px;
-}
-
-.resize {
-    height: 60px;
-    width: 70px;
-}
-
-.navbar-inverse {
-    background-color: white;
-    color: black;
-}
-
-
-/* positioning for page content */
-
-.contentMid {
-    position: relative;
-    text-align: center;
-    max-width: 1000px;
-    margin: 20px auto 20px auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-.aboutUsContent {
-    text-align: justify;
-    text-indent: 2em;
-}
-
-
-/*Gear Page*/
-
-.gearContent {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-
-.gearContent .accordionHeader {
-    background-color: #d3d3d3;
-    padding: 2px;
-    cursor: pointer;
-    font-weight: bold;
-    height: 100px;
-}
-
-.gearContent .accordionHeader#outerwearHeader {
-    /*background-image:url("../Images/outerwearbrands.jpg");*/
-    background-repeat: no-repeat;
-}
-
-.accordionHeader span {
-    position: relative;
-    top: 20px;
-    font-weight: bolder;
-    color: black;
-    font-size: 3em;
-}
-
-.shopsContent .accordionContent {
-    display: none;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* Gear page Images */
-
-.Outerwear {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-.Snowboard {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-.Bindings {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-.Boots {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* Slopes page Images */
-
-.Location {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-.Slopes {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-.SlopesCard img {
-    height: 465px;
-    width: 465px;
-    opacity: .9;
-}
-
-.SlopesCard .SlopesText {
-    position: absolute;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 4em;
-    background-color: white;
-    opacity: .8;
-    top: 60px;
-    height: 1.5em;
-    width: 94%;
-}
-
-.SlopesCard .SlopesPreview {
-    position: absolute;
-    font-family: , cursive;
-    font-size: 1.2em;
-    opacity: .8;
-    top: 190px;
-    width: 90%;
-    right: 25px;
-    display: none;
-}
-
-.BigWhiteContent {}
-
-
-/* Forum Page */
-
-.forumContent {
-    text-align: left;
-    margin-top: 20px;
-}
-
-.forumboxtitle {
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.forumComment table,
-td,
-th {
-    border: 1px solid black;
-}
-
-
-/* About Us */
-
-.test {
-    max-width: 100%;
-    width: 300px;
-    height: auto;
-    float: left;
-}
-
-.test1 {
-    max-width: 100%;
-    width: 300px;
-    height: auto;
-    float: right;
-}
-
-
-/* Membership Page */
-
-.signinpage {
-    width: 360px;
-    padding: 100px 0 0;
-    margin: auto;
-}
-
-.form {
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-.form input {
-    font-family: "Roboto", sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-.form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #3D718F;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.form button:hover,
-.form button:active,
-.form button:focus {
-    background: #154560;
-}
-
-.form .message {
-    margin: 15px 0 0;
-    color: #b3b3b3;
-    font-size: 12px;
-}
-
-.form .message a {
-    color: #3D718F;
-    text-decoration: none;
-}
-
-.signintitle {
-    color: #3D718F;
-    font-weight: bold;
-}
-
-#bodysignin .contentMid {
-    background: #3D718F;
-    background: linear-gradient(to left, #3D718F, #154560);
-    font-family: "Roboto", sans-serif;
-}
-
-.error {
-    font-weight: bold;
-    visibility: hidden;
-    color: blue;
-    float: left;
-    font-size: small;
-}
-
-#passreqlist {
-    font-weight: bold;
-    float: right;
-    margin-top: 10em;
-    margin-right: 1em;
-    list-style-type: none;
-    background-color: #94bbd1;
-    list-style-type: none;
-    visibility: hidden;
-}
-
-.ui-datepicker {
-    z-index: 1000;
-    background-color: white;
-    color: black;
-}
-
-
-/* Forum */
-
-#errUser {
-    color: red;
-    display: block;
-}
-
-#errEmail {
-    color: red;
-    display: block;
-}
-
-
-/* footer */
-
-.footer {
-    position: static;
-    bottom: 0;
-    padding: 20px;
-    background-color: #606466;
-    color: lightgray;
-}
-
-.footerContent {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/*media*/
-
-@media only screen and (max-width:500px) {
+    .wrap {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: -25px;
+        height: 60px;
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        z-index: 9999;
+    }
+    
+    ul {
+        padding-top: 8px;
+    }
+    
+    .resize {
+        height: 60px;
+        width: 70px;
+    }
+    
+    .navbar-inverse {
+        background-color: white;
+        color: black;
+    }
+    /* positioning for page content */
+    
+    .contentMid {
+        position: relative;
+        text-align: center;
+        max-width: 1000px;
+        margin: 20px auto 20px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .aboutUsContent {
+        text-align: justify;
+        text-indent: 2em;
+    }
+    /*Gear Page*/
+    
+    .gearContent {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .gearContent .accordionHeader {
+        background-color: #d3d3d3;
+        padding: 2px;
+        cursor: pointer;
+        font-weight: bold;
+        height: 100px;
+    }
+    
+    .gearContent .accordionHeader#outerwearHeader {
+        /*background-image:url("../Images/outerwearbrands.jpg");*/
+        background-repeat: no-repeat;
+    }
+    
+    .accordionHeader span {
+        position: relative;
+        top: 20px;
+        font-weight: bolder;
+        color: black;
+        font-size: 3em;
+    }
+    
+    .shopsContent .accordionContent {
+        display: none;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Gear page Images */
+    
+    .Outerwear {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .Snowboard {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .Bindings {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .Boots {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    /* Slopes page Images */
+    
+    .Location {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .Slopes {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .SlopesCard img {
+        height: 465px;
+        width: 465px;
+        opacity: .9;
+    }
+    
+    .SlopesCard .SlopesText {
+        position: absolute;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 4em;
+        background-color: white;
+        opacity: .8;
+        top: 60px;
+        height: 1.5em;
+        width: 94%;
+    }
+    
+    .SlopesCard .SlopesPreview {
+        position: absolute;
+        font-family:cursive;
+        font-size: 1.2em;
+        opacity: .8;
+        top: 190px;
+        width: 90%;
+        right: 25px;
+        display: none;
+    }
+    
+    .BigWhiteContent {}
+    /* Forum Page */
+    
+    .forumContent {
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .forumboxtitle {
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .forumComment table,
+    td,
+    th {
+        border: 1px solid black;
+    }
+    /* About Us */
+    
     .test {
-        display: none;
-    }
-    .test1 {
-        display: none;
-    }
-    .footer {
-        font-size: 40%;
-    }
-}
-
-@media only screen and (max-width:350px) {
-    .col-sm-12 {
-        font-size: 40%;
-    }
-}
-
-@media only screen and (max-width:900px) {
-    .dropdown:hover .dropdown-menu {
-        width: 100%;
-        text-align: center;
-        position: relative;
-        margin-top: 0px;
-    }
-    .navbar-inverse {
+        max-width: 100%;
+        width: 300px;
         height: auto;
-    }
-}
+        float: left;
+	margin-right:10px;
 
+    }
+    
+    .test1 {
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+        float: right;
+	margin-left:10px;
+    }
+    /* Membership Page */
+    
+    .signinpage {
+        width: 360px;
+        padding: 100px 0 0;
+        margin: auto;
+    }
+    
+    .form {
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    
+    .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    
+    .form button {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #3D718F;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .form button:hover,
+    .form button:active,
+    .form button:focus {
+        background: #154560;
+    }
+    
+    .form .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+    }
+    
+    .form .message a {
+        color: #3D718F;
+        text-decoration: none;
+    }
+    
+    .signintitle {
+        color: #3D718F;
+        font-weight: bold;
+    }
+    
+    #bodysignin .contentMid {
+        background: #3D718F;
+        background: linear-gradient(to left, #3D718F, #154560);
+        font-family: "Roboto", sans-serif;
+    }
+    /* Forum */
+    
+    #errUser {
+        color: red;
+        display: block;
+    }
+    
+    #errEmail {
+        color: red;
+        display: block;
+    }
+    /* footer */
+    
+    .footer {
+        position: static;
+        bottom: 0;
+        padding: 20px;
+        background-color: #606466;
+        color: lightgray;
+    }
+    
+    .footerContent {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*media*/
+    
+    @media only screen and (max-width:500px) {
+        .test {
+            display: none;
+        }
+        .test1 {
+            display: none;
+        }
+        .footer {
+            font-size: 40%;
+        }
+    }
+    
+    @media only screen and (max-width:350px) {
+        .col-sm-12 {
+            font-size: 40%;
+        }
+    }
+    
+    @media only screen and (max-width:900px) {
+        .dropdown:hover .dropdown-menu {
+            width: 100%;
+            text-align: center;
+            position: relative;
+            margin-top: 0px;
+        }
+        .navbar-inverse {
+            height: auto;
+        }
+        .wrap {
+            position: relative;
+        }
+        .bannerAbout {
+            display: none;
+        }
+    }
+    
+    #errUser {
+        color: red;
+        display: block;
+    }
+    
+    #errEmail {
+        color: red;
+        display: block;
+    }
