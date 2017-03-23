@@ -148,6 +148,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    transition: top 0.5s ease-in-out;
 }
 
 .bannerForum {
@@ -177,7 +178,7 @@
     .dropdown:hover .dropdown-menu {
         width: 100%;
         text-align: center;
-        position:relative;    
+        position: relative;
     }
 }
 
@@ -208,9 +209,8 @@ ul {
 }
 
 .navbar-inverse {
-background-color: white;
-    color:black;
-    
+    background-color: white;
+    color: black;
 }
 
 
@@ -261,7 +261,7 @@ background-color: white;
 }
 
 
-/**/
+/*Gear Page*/
 
 .gearContent {
     position: relative;
@@ -305,8 +305,6 @@ background-color: white;
     margin-top: 20px;
     max-width: 100%;
     height: auto;
-    
-    
 }
 
 .Snowboard {
@@ -345,24 +343,35 @@ background-color: white;
     margin-bottom: -4em;
 }
 .SlopesCard img {
-    height:465px;
-    width:465px;
-}
-.SlopesCard .SlopesText {
-    position: relative;
-    visibility: hidden;
-    bottom:430px;
-    font-size: 4em;
-    background-color:white;
+    height: 465px;
+    width: 465px;
+    opacity: .9;
 }
 
-.SlopesCard:hover img {
-    opacity: 0.3;
-}
-.SlopesCard:hover .SlopesText {
-    visibility:visible;
+.SlopesCard .SlopesText {
+    position: absolute;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4em;
+    background-color: white;
     opacity: .8;
+    top: 60px;
+    height: 1.5em;
+    width: 94%;
 }
+
+.SlopesCard .SlopesPreview {
+    position: absolute;
+    font-family: , cursive;
+    font-size: 1.3em;
+    opacity: .8;
+    top: 190px;
+    width: 90%;
+    right: 25px;
+    display: none;
+}
+
+.BigWhiteContent {}
+
 
 /* Forum Page */
 
