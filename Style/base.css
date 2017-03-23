@@ -1,4 +1,3 @@
-    <<<<<<< HEAD
     /* Reset html */
     
     * {
@@ -157,19 +156,7 @@
     .dropdown:hover .dropdown-menu a {
         color: dimgrey;
     }
-    
-    @media only screen and (max-width:900px) {
-        .dropdown:hover .dropdown-menu {
-            width: 100%;
-            text-align: center;
-            position: relative;
-            margin-top: 0px;
-        }
-        .navbar-inverse {
-            height: auto;
-        }
-    }
-    
+
     .wrap {
         display: inline-block;
         width: 100%;
@@ -304,7 +291,7 @@
     
     .SlopesCard .SlopesPreview {
         position: absolute;
-        font-family: , cursive;
+        font-family:cursive;
         font-size: 1.2em;
         opacity: .8;
         top: 190px;
@@ -340,6 +327,8 @@
         width: 300px;
         height: auto;
         float: left;
+	margin-right:10px;
+
     }
     
     .test1 {
@@ -347,6 +336,7 @@
         width: 300px;
         height: auto;
         float: right;
+	margin-left:10px;
     }
     /* Membership Page */
     
@@ -419,6 +409,14 @@
         background: linear-gradient(to left, #3D718F, #154560);
         font-family: "Roboto", sans-serif;
     }
+	
+	.error{
+	font-weight:bold;
+	visibility:hidden;
+	color:blue;
+	float:left;
+	font-size: small;
+}
     /* Forum */
     
     #errUser {
@@ -475,4 +473,41 @@
         .navbar-inverse {
             height: auto;
         }
+        .wrap {
+            position: relative;
+        }
+        .bannerAbout {
+            display: none;
+        }
     }
+    
+    #errUser {
+        color: red;
+        display: block;
+    }
+    
+    #errEmail {
+        color: red;
+        display: block;
+    }
+
+	
+#passreqlist{
+	font-weight:bold;
+	float:right;
+	margin-top: 10em;
+	margin-right: 1em;
+	list-style-type: none;
+	background-color: #94bbd1;
+	list-style-type: none;
+	visibility:hidden;
+	
+}
+
+.ui-datepicker{
+	
+  z-index: 1000;
+  background-color:white;
+  color: black;
+}
+

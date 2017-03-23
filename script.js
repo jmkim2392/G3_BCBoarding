@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    /* Gear jquery */
     $(".accordionHeader").click(function () {
         if ($(this).next().is(":hidden")) {
             $(".accordionContent").hide(700, "swing")
@@ -14,6 +15,7 @@ $(document).ready(function () {
             $(".accordionContent").hide(600, "swing")
         }
     });
+    /* Slopes jquery */
     $(".SlopesCard").hover(function () {
         $(this).find(".SlopesCardImg").fadeTo(300, 0.2);
         $(this).find(".SlopesPreview").fadeTo(300, 1);
@@ -22,6 +24,12 @@ $(document).ready(function () {
         $(this).find(".SlopesPreview").fadeTo(100, 0);
     });
 });
+$(document).ready(function () {
+    $("#date")(function () {
+        $("#date").datepicker();
+    })
+});
+/* Banner fade out jquery */
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     var height = $(window).height();
@@ -30,11 +38,10 @@ $(window).scroll(function () {
 
     });
 });
-
+/* Form validation for Membership */
 function validatecname() {
     var regexp1 = /^[a-z0-9-_\.]+$/i;
     var errid = document.getElementById("errcname");
-    var id = document.getElementById("username");
     if (regexp1.test(document.getElementById("username").value)) {
         errid.setAttribute("style", "visibility:hidden");
     }
@@ -44,14 +51,16 @@ function validatecname() {
 }
 
 function validatecpass() {
-    var regexp1 = /^[a-z0-9]+$/i;
+    var regexp1 = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
     var errid = document.getElementById("errcpass");
-    var id = document.getElementById("cpassword");
+    var req = document.getElementById("passreqlist");
     if (regexp1.test(document.getElementById("cpassword").value)) {
         errid.setAttribute("style", "visibility:hidden");
+        req.setAttribute("style", "visibility:hidden");
     }
     else {
         errid.setAttribute("style", "visibility:visible");
+        req.setAttribute("style", "visibility:visible");
     }
 }
 
@@ -75,7 +84,6 @@ function validatename() {
 
     var regexp1 = /^[a-z0-9-_\.]+$/;
     var errid = document.getElementById("errname");
-    var id = document.getElementById("name");
     if (regexp1.test(document.getElementById("name").value)) {
         errid.setAttribute("style", "visibility:hidden");
     }
@@ -87,11 +95,42 @@ function validatename() {
 function validatepass() {
     var regexp1 = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
     var errid = document.getElementById("errpass");
-    var id = document.getElementById("pass");
     if (regexp1.test(document.getElementById("pass").value)) {
         errid.setAttribute("style", "visibility:hidden");
     }
     else {
         errid.setAttribute("style", "visibility:visible");
+    }
+}
+/* Forum js*/
+function formValidate() {
+    var nameRegex = new RegExp(/^[a-zA-Z]+$/);
+    if ($("#usr").val().match(nameRegex) == null) {
+        $("#errUser").html("Please enter a valid name");
+        $("#form-group1").className = "error";
+        return false;
+    }
+    else {
+        $("#errUser").html("");
+        $("#form-group1").className = '';
+    }
+    var emailRegex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    if ($("#em").val().match(emailRegex) == null) {
+        $("#errEmail").html("Please enter a valid email");
+        $("#form-group2").className = "error";
+        return false;
+    }
+    else {
+        $("#errEmail").html("");
+        $("#form-group2").className = '';
+    }
+    if ($("#comment").val() == "") {
+        $("#errComment").html("Comment field is empty");
+        $("#form-group3").className = "error";
+        return false;
+    }
+    else {
+        $("#errComment").html("");
+        $("#form-group3").className = '';
     }
 }
