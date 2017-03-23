@@ -22,13 +22,11 @@ $(document).ready(function () {
         $(this).find(".SlopesPreview").fadeTo(100, 0);
     });
 });
-
-$(document).ready(function(){
-	 $("#date")(function() {
-    $("#date").datepicker();
-	 })
+$(document).ready(function () {
+    $("#date")(function () {
+        $("#date").datepicker();
+    })
 });
-
 /* Banner fade out jquery */
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
@@ -37,7 +35,6 @@ $(window).scroll(function () {
         'opacity': ((height - scrollTop) / height)
     });
 });
-
 /* Form validation for Membership */
 function validatecname() {
     var regexp1 = /^[a-z0-9-_\.]+$/i;
@@ -95,5 +92,37 @@ function validatepass() {
     }
     else {
         errid.setAttribute("style", "visibility:visible");
+    }
+}
+/* Forum js*/
+function formValidate() {
+    var nameRegex = new RegExp(/^[a-zA-Z]+$/);
+    if ($("#usr").val().match(nameRegex) == null) {
+        $("#errUser").html("Please enter a valid name");
+        $("#form-group1").className = "error";
+        return false;
+    }
+    else {
+        $("#errUser").html("");
+        $("#form-group1").className = '';
+    }
+    var emailRegex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    if ($("#em").val().match(emailRegex) == null) {
+        $("#errEmail").html("Please enter a valid email");
+        $("#form-group2").className = "error";
+        return false;
+    }
+    else {
+        $("#errEmail").html("");
+        $("#form-group2").className = '';
+    }
+    if ($("#comment").val() == "") {
+        $("#errComment").html("Comment field is empty");
+        $("#form-group3").className = "error";
+        return false;
+    }
+    else {
+        $("#errComment").html("");
+        $("#form-group3").className = '';
     }
 }
