@@ -475,3 +475,14 @@
             height: auto;
         }
     }
+	#errUser{
+      
+		color:red;
+   
+		display: block;
+}
+
+#errEmail{
+      color:red;
+   display: block;
+}
