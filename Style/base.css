@@ -339,6 +339,8 @@
         width: 300px;
         height: auto;
         float: left;
+	margin-right:10px;
+
     }
     
     .test1 {
@@ -346,6 +348,7 @@
         width: 300px;
         height: auto;
         float: right;
+	margin-left:10px;
     }
     /* Membership Page */
     
