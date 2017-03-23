@@ -1,4 +1,3 @@
-    <<<<<<< HEAD
     /* Reset html */
     
     * {
@@ -304,7 +303,7 @@
     
     .SlopesCard .SlopesPreview {
         position: absolute;
-        font-family: , cursive;
+        font-family:cursive;
         font-size: 1.2em;
         opacity: .8;
         top: 190px;
