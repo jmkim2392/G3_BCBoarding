@@ -12,20 +12,19 @@ $(document).ready(function () {
         else {
             $(".accordionContent").hide(500, "swing")
         }
-            $(".accordionContent").hide(600, "swing")
-        }
-    });
-    /* Slopes jquery */
-    $(".SlopesCard").hover(function () {
-        $(this).find(".SlopesCardImg").fadeTo(300, 0.2);
-        $(this).find(".SlopesPreview").fadeTo(300, 1);
-    }, function () {
-        $(this).find(".SlopesCardImg").fadeTo(100, 1);
-        $(this).find(".SlopesPreview").fadeTo(100, 0);
+        $(".accordionContent").hide(600, "swing")
     });
 });
+/* Slopes jquery */
+$(".SlopesCard").hover(function () {
+    $(this).find(".SlopesCardImg").fadeTo(300, 0.2);
+    $(this).find(".SlopesPreview").fadeTo(300, 1);
+}, function () {
+    $(this).find(".SlopesCardImg").fadeTo(100, 1);
+    $(this).find(".SlopesPreview").fadeTo(100, 0);
+});
 $(document).ready(function () {
-    $("#date")(function () {
+    $(function () {
         $("#date").datepicker();
     })
 });
@@ -35,7 +34,6 @@ $(window).scroll(function () {
     var height = $(window).height();
     $('.bannerSlopes, .bannerGear, .bannerAbout, .bannerForum, .bannerMember').css({
         'opacity': ((height - scrollTop) / height)
-
     });
 });
 /* Form validation for Membership */
@@ -69,11 +67,8 @@ function validateemail() {
     var regexp1 = /\S+@\S+\.\S+/;
     if (regexp1.test(document.getElementById("email").value)) {
         errid.setAttribute("style", "visibility:hidden");
-
         return true;
-
         return false;
-
     }
     else {
         errid.setAttribute("style", "visibility:visible");
@@ -81,7 +76,6 @@ function validateemail() {
 }
 
 function validatename() {
-
     var regexp1 = /^[a-z0-9-_\.]+$/;
     var errid = document.getElementById("errname");
     if (regexp1.test(document.getElementById("name").value)) {
