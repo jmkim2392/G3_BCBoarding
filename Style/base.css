@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     /* Reset html */
     
     * {
@@ -462,67 +463,92 @@
         margin-left: auto;
         margin-right: auto;
     }
-    /*media*/
-    
-    @media only screen and (max-width:500px) {
-        .test {
-            display: none;
+       
+        /*media*/
+        
+        @media only screen and (max-width:500px) {
+            .test {
+                display: none;
+            }
+            .test1 {
+                display: none;
+            }
+            .footer {
+                font-size: 40%;
+            }
         }
-        .test1 {
-            display: none;
+        
+        @media only screen and (max-width:350px) {
+            .col-sm-12 {
+                font-size: 40%;
+            }
         }
-        .footer {
-            font-size: 40%;
+        
+        @media only screen and (max-width:900px) {
+            .dropdown:hover .dropdown-menu {
+                width: 100%;
+                text-align: center;
+                position: relative;
+                margin-top: 0px;
+            }
+            .navbar-inverse {
+                height: auto;
+            }
+            .wrap {
+                position: relative;
+            }
+            .bannerAbout {
+                display: none;
+            }
         }
-    }
-    
-    @media only screen and (max-width:350px) {
-        .col-sm-12 {
-            font-size: 40%;
+        
+        @media only screen and (max-width:950px) {
+            .SlopesCard .SlopesText {
+                position: absolute;
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 4em;
+                background-color: white;
+                opacity: .8;
+                top: 60px;
+                height: 1.5em;
+                left: 149px;
+                width: 61%;
+            }
+            .SlopesCard .SlopesPreview {
+                position: absolute;
+                font-family: cursive;
+                font-size: 1.2em;
+                opacity: .8;
+                top: 175px;
+                width: 61%;
+                display: none;
+            }
         }
-    }
-    
-    @media only screen and (max-width:900px) {
-        .dropdown:hover .dropdown-menu {
-            width: 100%;
-            text-align: center;
-            position: relative;
-            margin-top: 0px;
+        
+        #errUser {
+            color: red;
+            display: block;
         }
-        .navbar-inverse {
-            height: auto;
+        
+        #errEmail {
+            color: red;
+            display: block;
         }
-        .wrap {
-            position: relative;
+        
+        #passreqlist {
+            font-weight: bold;
+            float: right;
+            margin-top: 10em;
+            margin-right: 1em;
+            list-style-type: none;
+            background-color: #94bbd1;
+            list-style-type: none;
+            visibility: hidden;
         }
-        .bannerAbout {
-            display: none;
+        
+        .ui-datepicker {
+            z-index: 1000;
+            background-color: white;
+            color: black;
         }
-    }
-    
-    #errUser {
-        color: red;
-        display: block;
-    }
-    
-    #errEmail {
-        color: red;
-        display: block;
-    }
-    
-    #passreqlist {
-        font-weight: bold;
-        float: right;
-        margin-top: 10em;
-        margin-right: 1em;
-        list-style-type: none;
-        background-color: #94bbd1;
-        list-style-type: none;
-        visibility: hidden;
-    }
-    
-    .ui-datepicker {
-        z-index: 1000;
-        background-color: white;
-        color: black;
-    }
+ 
