@@ -15,7 +15,7 @@
      });
  });
  /* Slopes jquery */
- $(document).ready(function () {
+ /*$(document).ready(function () {
      $(".SlopesCard").hover(function () {
          $(this).find(".SlopesCardImg").fadeTo(300, 0.2);
          $(this).find(".SlopesPreview").fadeTo(300, 1);
@@ -24,6 +24,30 @@
          $(this).find(".SlopesPreview").fadeTo(100, 0);
      });
  });
+*/
+/*change hover to click and make close button*/
+$(document).ready(function () {
+     $(".BigWhite").hover(function () {
+         $(this).find(".SlopesCardImg").fadeTo(300, 0.2);
+         $(".BigWhiteContent").fadeTo(300, 1);
+     }, function () {
+         $(this).find(".SlopesCardImg").fadeTo(100, 1);
+         $(".BigWhiteContent").fadeTo(100, 0);
+     });
+ });
+
+$(document).ready(function () {
+     $(".Cypress").hover(function () {
+         $(this).find(".SlopesCardImg").fadeTo(300, 0.2);
+         $(".CypressContent").fadeTo(300, 1);
+     }, function () {
+         $(this).find(".SlopesCardImg").fadeTo(100, 1);
+         $(".CypressContent").fadeTo(100, 0);
+     });
+ });
+
+
+
  $(document).ready(function () {
      $(function () {
          $("#date").datepicker();
