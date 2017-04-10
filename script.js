@@ -285,9 +285,26 @@ function whistlerMap() {
      });
  });
  /* Form validation for Membership */
-
-function testUsername() {
+function testfname() {
      var nameRegex = new RegExp(/[a-zA-Z]$/);
+    if ($("#fname").val().match(nameRegex)) {
+        
+        return true;
+    } else {
+        return false;
+    }
+}
+function testlname() {
+     var nameRegex = new RegExp(/[a-zA-Z]$/);
+    if ($("#lname").val().match(nameRegex)) {
+        
+        return true;
+    } else {
+        return false;
+    }
+}
+function testUsername() {
+     var nameRegex = new RegExp(/[a-zA-Z0-9]$/);
     if ($("#username").val().match(nameRegex)) {
         
         return true;
@@ -324,7 +341,21 @@ function testEmail() {
 }
 
 function signupValidate() {
-    var username, password, cpassword, email
+    var fname, lname, username, password, cpassword, email
+    if (testfname()){
+        $("#errFname").html("");
+         fname = true;
+    } else {
+        $("#errFname").html("Please enter a valid first name");
+        fname = false;
+    }
+    if (testlname()){
+        $("#errLname").html("");
+         lname = true;
+    } else {
+        $("#errLname").html("Please enter a valid last name");
+        lname = false;
+    }
     if (testUsername()){
         $("#errUsername").html("");
          username = true;
@@ -354,9 +385,9 @@ function signupValidate() {
             $("#errEmail").html("");
          email = true;
     } else {
-            $("#errEmail").html("Please enter a valid name");
+            $("#errEmail").html("Please enter a valid email");
          email = false;
-    } if (username && password && cpassword && email) {
+    } if (fname && lname && username && password && cpassword && email) {
         return true;
     } else {
         return false;
@@ -365,7 +396,7 @@ function signupValidate() {
 
 
 function testLogUsername() {
-    var nameRegex = new RegExp(/[a-zA-Z]$/);
+    var nameRegex = new RegExp(/[a-zA-Z0-9]$/);
     if ($("#logUsername").val().match(nameRegex)) {
         
         return true;
@@ -405,39 +436,6 @@ function loginValidate() {
 
 
  /* Forum js*/
-
- function formValidate() {
-     var nameRegex = new RegExp(/^[a-zA-Z]+$/);
-     if ($("#usr").val().match(nameRegex) == null) {
-         $("#errUser").html("Please enter a valid name");
-         $("#form-group1").className = "error";
-         return false;
-     }
-     else {
-         $("#errUser").html("");
-         $("#form-group1").className = '';
-     }
-     var emailRegex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
-     if ($("#em").val().match(emailRegex) == null) {
-         $("#errEmail").html("Please enter a valid email");
-         $("#form-group2").className = "error";
-         return false;
-     }
-     else {
-         $("#errEmail").html("");
-         $("#form-group2").className = '';
-     }
-     if ($("#comment").val() == "") {
-         $("#errComment").html("Comment field is empty");
-         $("#form-group3").className = "error";
-         return false;
-     }
-     else {
-         $("#errComment").html("");
-         $("#form-group3").className = '';
-     }
- }
-
 function testTopic() {
      if ($("#subject").val().length != 0) {
         

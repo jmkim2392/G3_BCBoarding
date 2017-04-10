@@ -77,24 +77,14 @@
         <button class="newPost">Create a new post</button>
         <div class="forumContent">
             <button class="closeBtn"></button>
-            <form novalidate onsubmit="return forumValidate()" action="add_topic.php"  method="post">
-                <div id="form-group1">
-                   
-                    <label for="usr">Name: </label>
-                    <input name="" type="text" class="form-control" id="usr"> </div>
-                 <div id="errUser"></div>
-                <div id="form-group2">
-                    
-                    <label for="em">Email: </label>
-                    <input name="" type="email" class="form-control" id="em"> </div>
-                 <div id="errUser"></div>
-                <div id="form-group3">
-                    
+            <form novalidate onsubmit="return forumValidate()" action="add_topic.php"  method="post">                             
+                    <label for="subject">Subject: </label>
+                    <input name="subject" type="text" class="form-control" id="subject">
+                <div class="errorMessage" id="errSubject"></div>
                     <label for="comment">Comment: </label>
-                    <textarea name="topic" class="form-control" rows="5" id="comment"> </textarea>
-                     <div id="errUser"></div>
-                </div>
-                <input type="submit" value="Submit"> </form>
+                    <textarea name="comment" type="text" class="form-control" rows="5" id="commentBox"> </textarea>
+                     <div class="errorMessage" id="errComment"></div>
+                <input type="submit" value="Submit"> <input type="reset" name="Submit2" value="Reset" /> </form>
         </div>
         <div class="forumComment">
                <table class="forumTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
