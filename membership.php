@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +21,16 @@
 </head>
 
 <body>
+    <?php
+	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+		echo '<ul class="err">';
+		foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+			echo '<li>',$msg,'</li>'; 
+		}
+		echo '</ul>';
+		unset($_SESSION['ERRMSG_ARR']);
+	}
+?>
     <!-- navigation bar -->
     <div class="wrap"> <span class="decor"></span>
         <nav class="navbar navbar-inverse narvar-static-top">
@@ -67,24 +80,34 @@
             </ul>
         </div>
         <div class="form">
-            <form class="registrationform" name="form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-                <fieldset>
+            <form class="registrationform" name="form" onsubmit="return signupValidate()" action="register.php" method="post">
                     <p class="signintitle">Sign-up</p>
-                    <input onblur="validatecname();" id="username" name="id" type="text" placeholder="Name" /><span id="errcname" class="error"> please enter a valid Username</span>
-                    <input type="password" onblur="validatecpass();" id="cpassword" placeholder="Password" /> <span id="errcpass" class="error"> please enter a Password</span>
-                    <input type="text" onblur="validateemail();" id="email" title="We do not send spam" placeholder="Email address" /> <span id="erremail" class="error"> please enter a Valid Email Address</span>
-                    <input placeholder="birthdate" type="text" id="date" />
-                    <button>create</button>
+                <input  id="fname" name="firstName" type="text" placeholder="First Name"/>
+                <div class="errorMessage" id="errFname"></div>
+                <input  id="lname" name="lastName" type="text" placeholder="Last Name"/>
+                <div class="errorMessage" id="errLname"></div>
+                <input id="email" name="email" type="text"   placeholder="Email address" /> 
+                <div  class="errorMessage" id="errEmail"></div>
+                    <input  id="username" name="username" type="text" placeholder="Username"/>
+                <div class="errorMessage" id="errUsername"></div>
+                    <input id="password" name="password" type="password"  placeholder="Password" />
+               <div  class="errorMessage" id="errPass"></div>
+                <input id="cpassword" name="cpassword" type="password"  placeholder="Re-type Password" />
+               <div  class="errorMessage" id="errCPass"></div>
+                    
+                
+                    <input class="submit" type="submit" value="Register"> </form>
                     <p class="message">Already registered? <a href="#">Sign In</a></p>
-                </fieldset>
-            </form>
-            <form class="loginpage" name="loginpage" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+            
+            <form class="loginpage" name="loginpage" onsubmit="return loginValidate()" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
                 <p class="signintitle"> Log-In</p>
-                <input type="text" id="name" onblur="validatename();" placeholder="Username" /> <span id="errname" class="error"> please enter a Username</span>
-                <input type="password" id="pass" onblur="validatepass();" placeholder="Password" /> <span id="errpass" class="error"> please enter a password</span>
-                <button>login</button>
+                <input type="text" id="logUsername" placeholder="Username" /> 
+                <div  class="errorMessage" id="errUsernameLog"></div>
+                <input type="password" id="logPass" placeholder="Password" /> 
+               <div  class="errorMessage" id="errPassLog"></div>
+                <input class="submit" type="submit" value="Login"> </form>
                 <p class="message">Not registered? <a href="#">Create an account</a></p>
-            </form>
+           
         </div>
     </div>
         </div>

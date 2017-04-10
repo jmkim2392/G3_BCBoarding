@@ -499,7 +499,6 @@ margin-left:15px;
     top:100px;
 }
 
-
     .signinpage {
         width: 360px;
         padding: 100px 0 0;
@@ -529,7 +528,7 @@ margin-left:15px;
         font-size: 14px;
     }
     
-    .form button {
+    .form .submit {
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
         outline: 0;
@@ -568,15 +567,35 @@ margin-left:15px;
         background: #3D718F;
         background: linear-gradient(to left, #3D718F, #154560);
         font-family: "Roboto", sans-serif;
-    }
-    
-    .error {
-        font-weight: bold;
-        visibility: hidden;
-        color: blue;
-        float: left;
-        font-size: small;
-    }
+    }     
+        #passreqlist {
+            font-weight: bold;
+            position:absolute;
+            list-style-type: none;
+            background-color: white;
+            list-style-type: none;
+            visibility: hidden;
+            top:155px;
+            right:-20px;
+            z-index:10000;
+            padding:10px;
+            border:solid;
+            border-radius:25px;
+        }
+        
+        .ui-datepicker {
+            z-index: 1000;
+            background-color: white;
+            color: black;
+        }
+/* Error Register*/
+.errorMessage {
+      margin-top:-10px;
+     margin-bottom:15px;
+     color: red;
+        display: block;
+}
+
     /* Forum */
     
     #errUser {
@@ -585,6 +604,7 @@ margin-left:15px;
     }
     
     #errEmail {
+        color: red;
         color: red;
         display: block;
     }
@@ -665,30 +685,5 @@ margin-left:15px;
             }
         }
         
-        #errUser {
-            color: red;
-            display: block;
-        }
-        
-        #errEmail {
-            color: red;
-            display: block;
-        }
-        
-        #passreqlist {
-            font-weight: bold;
-            float: right;
-            margin-top: 10em;
-            margin-right: 1em;
-            list-style-type: none;
-            background-color: #94bbd1;
-            list-style-type: none;
-            visibility: hidden;
-        }
-        
-        .ui-datepicker {
-            z-index: 1000;
-            background-color: white;
-            color: black;
-        }
+   
  

@@ -271,65 +271,114 @@ function whistlerMap() {
      });
  });
  /* Form validation for Membership */
- function validatecname() {
-     var regexp1 = /^[a-z0-9-_\.]+$/i;
-     var errid = document.getElementById("errcname");
-     if (regexp1.test(document.getElementById("username").value)) {
-         errid.setAttribute("style", "visibility:hidden");
-     }
-     else {
-         errid.setAttribute("style", "visibility:visible");
-     }
- }
 
- function validatecpass() {
-     var regexp1 = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
-     var errid = document.getElementById("errcpass");
-     var req = document.getElementById("passreqlist");
-     if (regexp1.test(document.getElementById("cpassword").value)) {
-         errid.setAttribute("style", "visibility:hidden");
-         req.setAttribute("style", "visibility:hidden");
-     }
-     else {
-         errid.setAttribute("style", "visibility:visible");
-         req.setAttribute("style", "visibility:visible");
-     }
- }
-
- function validateemail() {
-     var errid = document.getElementById("erremail");
-     var regexp1 = /\S+@\S+\.\S+/;
-     if (regexp1.test(document.getElementById("email").value)) {
-         errid.setAttribute("style", "visibility:hidden");
+function testUsername() {
+     var nameRegex = new RegExp(/[a-zA-Z]$/);
+    if ($("#username").val().match(nameRegex)) {
+        
+        return true;
+    } else {
+        return false;
+    }
+}
+function testPassword() {
+   
+    var regexpPass = new RegExp (/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
+    if ($("#password").val().match(regexpPass)) {
          return true;
-         return false;
+    } else {
+       return false;
+    }
+}
+function testCPassword() {
+   
+    var regexpPass = new RegExp (/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
+    if ($("#cpassword").val().match(regexpPass)) {
+         return true;
+    } else {
+       return false;
+    }
+}
+function testEmail() {
+     var regexpEmail = new RegExp ( /\S+@\S+\.\S+/);
+     if ($("#email").val().match(regexpEmail)) {
+      return true;
      }
      else {
-         errid.setAttribute("style", "visibility:visible");
+          return false;
      }
- }
+}
 
- function validatename() {
-     var regexp1 = /^[a-z0-9-_\.]+$/;
-     var errid = document.getElementById("errname");
-     if (regexp1.test(document.getElementById("name").value)) {
-         errid.setAttribute("style", "visibility:hidden");
-     }
-     else {
-         errid.setAttribute("style", "visibility:visible");
-     }
- }
+function signupValidate() {
+    var username, password, cpassword, email
+    if (testUsername()){
+        $("#errUsername").html("");
+         username = true;
+    } else {
+        $("#errUsername").html("Please enter a valid username");
+        username = false;
+    }
+    if (testPassword()) {
+        $("#errPass").html("");
+        $("#passreqlist").css ({"visibility": "hidden" });
+        password = true;
+        }
+    else {
+         $("#errPass").html("Please enter a valid password");
+        $("#passreqlist").css ({"visibility": "visible" });
+        password = false;
+    }
+    if (testCPassword()) {
+        $("#errCPass").html("");
+        password = true;
+        }
+    else {
+         $("#errCPass").html("Please enter a valid password");
+        password = false;
+    }
+    if (testEmail()) {
+            $("#errEmail").html("");
+         email = true;
+    } else {
+            $("#errEmail").html("Please enter a valid name");
+         email = false;
+    } if (username && password && cpassword && email) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
- function validatepass() {
-     var regexp1 = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
-     var errid = document.getElementById("errpass");
-     if (regexp1.test(document.getElementById("pass").value)) {
-         errid.setAttribute("style", "visibility:hidden");
-     }
-     else {
-         errid.setAttribute("style", "visibility:visible");
-     }
- }
+
+function testLogUsername() {
+    
+}
+function testLogPass() {
+    
+}
+
+function loginValidate() {
+    var username, password
+    if (testLogUsername() && $("#logUsername").val().length !=0){
+        $("#errUsernameLog").html("");
+         username = true;
+         } else {
+         $("#errUsernameLog").html("Please enter a valid username");
+        username = false;
+    } if (testLogPass() && $("#logPass").val().length !=0) {
+        $("#errPassLog").html("");
+        password = true;
+        } else {
+        $("#errPassLog").html("Please enter a valid password");
+        password = false;
+        } if (username && password) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
  /* Forum js*/
  function formValidate() {
      var nameRegex = new RegExp(/^[a-zA-Z]+$/);
