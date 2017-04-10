@@ -77,7 +77,7 @@
         <button class="newPost">Create a new post</button>
         <div class="forumContent">
             <button class="closeBtn"></button>
-            <form novalidate onsubmit="return formValidate()" action="add_topic.php"  method="post">
+            <form novalidate onsubmit="return forumValidate()" action="add_topic.php"  method="post">
                 <div id="form-group1">
                    
                     <label for="usr">Name: </label>

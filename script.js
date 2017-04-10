@@ -365,10 +365,21 @@ function signupValidate() {
 
 
 function testLogUsername() {
-    
+    var nameRegex = new RegExp(/[a-zA-Z]$/);
+    if ($("#logUsername").val().match(nameRegex)) {
+        
+        return true;
+    } else {
+        return false;
+    }
 }
 function testLogPass() {
-    
+    var regexpPass = new RegExp (/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
+    if ($("#logPass").val().match(regexpPass)) {
+         return true;
+    } else {
+       return false;
+    }
 }
 
 function loginValidate() {
@@ -394,6 +405,7 @@ function loginValidate() {
 
 
  /* Forum js*/
+
  function formValidate() {
      var nameRegex = new RegExp(/^[a-zA-Z]+$/);
      if ($("#usr").val().match(nameRegex) == null) {
@@ -425,3 +437,42 @@ function loginValidate() {
          $("#form-group3").className = '';
      }
  }
+
+function testTopic() {
+     if ($("#subject").val().length != 0) {
+        
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function testComment() {
+     if ($.trim($("#commentBox").val()) != '') {
+        
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function forumValidate() {
+    var subject, comment
+    if (testTopic()){
+        $("#errSubject").html("");
+         subject = true;
+         } else {
+         $("#errSubject").html("Subject cannot be blank");
+             subject = false;
+         } if (testComment()) {
+             $("#errComment").html("");
+             comment = true;
+         } else {
+             $("#errComment").html("Comment box cannot be blank");
+             comment = false;
+         } if (subject && comment) {
+             return true;
+         } else {
+             return false;
+         }
+}

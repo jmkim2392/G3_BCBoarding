@@ -64,23 +64,15 @@
         <button class="newPost">Create a new post</button>
         <div class="forumContent">
             <button class="closeBtn"></button>
-            <form novalidate onsubmit="return formValidate()" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-                <div id="form-group1">
+            <form onsubmit="return forumValidate()" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+               
                    
-                    <label for="usr">Name: </label>
-                    <input type="text" class="form-control" id="usr"> </div>
-                 <div id="errUser"></div>
-                <div id="form-group2">
-                    
-                    <label for="em">Email: </label>
-                    <input type="email" class="form-control" id="em"> </div>
-                 <div id="errUser"></div>
-                <div id="form-group3">
-                    
+                    <label for="subject">Subject: </label>
+                    <input name="subject" type="text" class="form-control" id="subject">
+                <div class="errorMessage" id="errSubject"></div>
                     <label for="comment">Comment: </label>
-                    <textarea class="form-control" rows="5" id="comment"> </textarea>
-                     <div id="errUser"></div>
-                </div>
+                    <textarea name="comment" type="text" class="form-control" rows="5" id="commentBox"> </textarea>
+                     <div class="errorMessage" id="errComment"></div>
                 <input type="submit" value="Submit"> </form>
         </div>
         <div class="forumComment">

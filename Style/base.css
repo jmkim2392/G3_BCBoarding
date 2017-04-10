@@ -599,7 +599,7 @@ margin-left:15px;
         
 /* Error Register*/
 .errorMessage {
-      margin-top:-10px;
+    
      margin-bottom:15px;
      color: red;
         display: block;
@@ -608,16 +608,6 @@ margin-left:15px;
 
     /* Forum */
     
-    #errUser {
-        color: red;
-        display: block;
-    }
-    
-    #errEmail {
-        color: red;
-        color: red;
-        display: block;
-    }
 .newPost {
     position:absolute;
     top:1px;
