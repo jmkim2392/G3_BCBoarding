@@ -83,13 +83,13 @@
             <div class="registerForm">
             <form class="registrationform" name="form" onsubmit="return signupValidate()" action="register.php" method="post">
                     <p class="signintitle">Sign-up</p>
-                <input  id="fname" name="firstName" type="text" placeholder="First Name"/>
+                <input  id="fname" name="fname" type="text" placeholder="First Name"/>
                 <div class="errorMessage" id="errFname"></div>
-                <input  id="lname" name="lastName" type="text" placeholder="Last Name"/>
+                <input  id="lname" name="lname" type="text" placeholder="Last Name"/>
                 <div class="errorMessage" id="errLname"></div>
                 <input id="email" name="email" type="text"   placeholder="Email address" /> 
                 <div  class="errorMessage" id="errEmail"></div>
-                    <input  id="username" name="username" type="text" placeholder="Username"/>
+                    <input  id="username" name="login" type="text" placeholder="Username"/>
                 <div class="errorMessage" id="errUsername"></div>
                     <input id="password" name="password" type="password"  placeholder="Password" />
                <div  class="errorMessage" id="errPass"></div>

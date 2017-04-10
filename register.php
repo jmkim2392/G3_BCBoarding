@@ -33,10 +33,10 @@
 	}
 	
 	//Sanitize the POST values
-	$fname = clean($_POST['firstName']);
-	$lname = clean($_POST['lastName']);
+	$fname = clean($_POST['fname']);
+	$lname = clean($_POST['lname']);
 	$email = clean($_POST['email']);
-    $login = clean($_POST['username']);
+    $login = clean($_POST['login']);
 	$password = clean($_POST['password']);
 	$cpassword = clean($_POST['cpassword']);
 	
@@ -95,7 +95,7 @@
 	}
 
 	//Create INSERT query
-	$qry = "INSERT INTO members(firstName, lastName, username, password) VALUES('$fname','$lname','$login','".md5($_POST['password'])."')";
+	$qry = "INSERT INTO members(fname, lname, login, password) VALUES('$fname','$lname','$login','".md5($_POST['password'])."')";
 	$result = @mysqli_query($GLOBALS["___mysqli_ston"], $qry);
 	
 	//Check whether the query was successful or not
