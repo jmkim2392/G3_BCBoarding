@@ -1,3 +1,18 @@
+<?php
+	require_once('config.php');
+require_once('auth.php');
+
+	// Connect to server and select database.
+	($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST,  DB_USER,  DB_PASSWORD))or die("cannot connect");
+	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB");
+	$tbl_name="topic"; // Table name
+
+
+	$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id";
+	// ORDER BY id DESC is order result by descending
+	$result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,25 +75,25 @@
     </div>
     <!--content-->
     <div class="contentMid">
-        <div class="forumboxtitle">Community Forum Posts</div>
+       <div class="forumboxtitle">Community Forum Posts</div>
         <button class="newPost">Create a new post</button>
         <div class="forumContent">
             <button class="closeBtn"></button>
-            <form novalidate onsubmit="return formValidate()" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+            <form novalidate onsubmit="return formValidate()" action="add_topic.php"  method="post">
                 <div id="form-group1">
                    
                     <label for="usr">Name: </label>
-                    <input type="text" class="form-control" id="usr"> </div>
+                    <input name="" type="text" class="form-control" id="usr"> </div>
                  <div id="errUser"></div>
                 <div id="form-group2">
                     
                     <label for="em">Email: </label>
-                    <input type="email" class="form-control" id="em"> </div>
+                    <input name="" type="email" class="form-control" id="em"> </div>
                  <div id="errUser"></div>
                 <div id="form-group3">
                     
                     <label for="comment">Comment: </label>
-                    <textarea class="form-control" rows="5" id="comment"> </textarea>
+                    <textarea name="topic" class="form-control" rows="5" id="comment"> </textarea>
                      <div id="errUser"></div>
                 </div>
                 <input type="submit" value="Submit"> </form>
@@ -91,9 +106,29 @@
                     <th width="6%" align="center" bgcolor="#E6E6E6">Name</th>
                     <th width="6%" align="center" bgcolor="#E6E6E6">Date/Time</th>
                 </tr>
+                   
+                <?php
+while($rows=mysqli_fetch_array($result)){ // Start looping table row
+?>
+<tr>
+<td bgcolor="#FFFFFF"><?php echo $rows['id']; ?></td>
+<td bgcolor="#FFFFFF"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><BR></td>
+    
+<td align="center" bgcolor="#FFFFFF"><?php echo $rows['firstname'] . " " . $rows['lastname']; ?></td>
+
+<td align="center" bgcolor="#FFFFFF"><?php echo $rows['datetime']; ?></td>
+
+</tr>
+
+<?php
+// Exit looping and close connection
+}
+((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
+?>
+                
+                
             </table>
         </div>
-        
     </div>
     <!-- footer -->
     <div class="footer">

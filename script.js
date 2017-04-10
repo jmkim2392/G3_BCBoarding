@@ -244,6 +244,18 @@ function whistlerMap() {
      });
  });
 
+/* new post button */
+ $(document).ready(function () {
+     $(".newPost").click(function () {
+         $(this).parent().find(".forumContent").css({
+             "display": "block"
+         });
+         $(this).parent().find(".forumContent").css({
+             "z-index": "10"
+         });
+     });
+ });
+
  function scrollFunction() {
      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
          document.getElementById("backToTop").style.display = "block";
@@ -252,6 +264,8 @@ function whistlerMap() {
          document.getElementById("backToTop").style.display = "none";
      }
  }
+
+
  // When the user clicks on the button, scroll to the top of the document
  function topFunction() {
      document.body.scrollTop = 0;

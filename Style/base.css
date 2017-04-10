@@ -497,24 +497,38 @@ margin-left:15px;
     
 .bannerMember .contentMid {
     top:100px;
-}
-
-    .signinpage {
-        width: 360px;
-        padding: 100px 0 0;
-        margin: auto;
-    }
-    
+}    
     .form {
+        margin-left:100px;
         position: relative;
         z-index: 1;
-        background: #FFFFFF;
-        max-width: 720px;
-        margin: 0 auto 100px;
+        
+        max-width: 800px;
+        
+    }
+.registerForm {
+    float:left;
+    width:360px;
+    margin-left:auto;
+    margin-right:auto;
+    background: #FFFFFF;
+    margin: 0 auto 100px;
         padding: 45px;
         text-align: center;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    }
+}
+.signinForm{
+    float:right;
+    width:360px;
+      margin-left:auto;
+    margin-right:auto;
+    background: #FFFFFF;
+    margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    
+}
     
     .form input {
         font-family: "Roboto", sans-serif;
@@ -575,19 +589,14 @@ margin-left:15px;
             background-color: white;
             list-style-type: none;
             visibility: hidden;
-            top:155px;
-            right:-20px;
-            z-index:10000;
+            top:400px;
+            right:190px;
+            z-index:10;
             padding:10px;
             border:solid;
             border-radius:25px;
         }
         
-        .ui-datepicker {
-            z-index: 1000;
-            background-color: white;
-            color: black;
-        }
 /* Error Register*/
 .errorMessage {
       margin-top:-10px;
@@ -595,6 +604,7 @@ margin-left:15px;
      color: red;
         display: block;
 }
+
 
     /* Forum */
     
@@ -608,6 +618,22 @@ margin-left:15px;
         color: red;
         display: block;
     }
+.newPost {
+    position:absolute;
+    top:1px;
+    right:20px;
+}
+.forumContent {
+    position: absolute;
+    width:60%;
+    right:10px;
+    background-color:white;
+    padding:20px;
+    display:none;
+    z-index:10;
+    border:solid;
+    border-radius:25px;
+}
     /* footer */
     
     .footer {
