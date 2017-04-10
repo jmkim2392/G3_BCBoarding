@@ -12,4 +12,18 @@ $(document).ready(function () {
             $(".accordionContent").hide(500, "swing")
             }
     });
+
+    $('a[href^="#home-body"]').on('click', function(event){
+        var target = $( $(this).attr('href') );
+             if( target.length ) {
+                 event.preventDefault();
+                 $('html, body').animate({
+                      scrollTop: target.offset().top
+                 }, 1000);
+             }
+    });
 });
+
+function scrollTo() {
+  document.getElementById("home-body").scrollIntoView();
+}
