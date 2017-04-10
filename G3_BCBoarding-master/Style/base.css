@@ -1,0 +1,668 @@
+/* Reset html */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* index.html */
+
+#slopeButton {
+    background-image: url("../Images/mountain1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30em;
+}
+
+
+/* homepage banner */
+/*
+
+
+
+
+
+
+
+Changed
+
+
+
+*/
+#home-banner {
+    background-image: url("../Images/jump21.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 100%;
+	  background-attachment: fixed;
+	  background-position: center center;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%,0 88%);
+}
+
+#home-center {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#banner-text {
+    background-color: rgba(220, 220, 220, 0.04);
+    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 75px;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-weight: 800;
+    color: white;
+}
+
+#home-body {
+  position: relative;
+
+}
+
+
+/* button to navigate to home content */
+
+#home-button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 90%);
+    text-decoration: none;
+}
+
+
+/* banner images for home headings */
+
+#gear {
+    background-image: url("../Images/snowboards01.jpg");
+    background-repeat: no-repeat;
+}
+
+#slopes {
+    background-image: url("../Images/mountain1.jpg");
+    background-repeat: no-repeat;
+}
+
+#about {
+    background-image: url("../Images/lodge0.jpeg");
+    background-repeat: no-repeat;
+}
+
+
+/* alignment for headings */
+
+.header-pic {
+    background-size: 100%;
+    opacity: 0.8;
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 300px;
+}
+
+.headers {
+    opacity: 1.5;
+    color: black;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 55px;
+}
+
+
+/* hover functions on headers */
+
+
+/*#slopes:hover {
+    background-image: url("../Images/mountainGrey.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+#gear:hover {
+    background-image: url("../Images/snowboardsGrey.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+#about:hover {
+    background-image: url("../Images/lodgeGrey.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}*/
+
+.home-content {
+    margin: 20px;
+}
+
+
+/* banner for each sub page */
+
+.bannerGear {
+    background-image: url("../Images/snowboards.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bannerAbout {
+    background-image: url("../Images/lodge.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bannerSlopes {
+    background-image: url("../Images/mountain1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bannerForum {
+    background-image: url("../Images/lifts.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bannerMember {
+    background-image: url("../Images/stunt.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: #606466;
+    left: 0;
+    opacity: 0.9;
+    height: 65px;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav a:visited {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.navbarContent {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-space {
+    margin-right: 1px;
+}
+
+.navbar-right {
+    margin-top: 5px;
+}
+
+.navbar-right a {
+    padding: 25px 15px 25px 15px;
+    font-size: 1em;
+    color: lightgray;
+    font-weight: bolder;
+    margin: -10px;
+    position: relative;
+    top: 7px;
+}
+
+.navbar-left img {
+    height: 60px;
+    position: relative;
+    bottom: 5px;
+}
+
+.navbartext-left a {
+    padding: 25px 15px 25px 15px;
+    font-size: 1em;
+    color: lightgray;
+    font-weight: bolder;
+    position: relative;
+    top: 22px;
+    left: -11px;
+    margin-right: -24px;
+}
+
+.navbartext-left a:hover {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-right a:hover {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+#homeButton {
+    padding: 11px;
+    font-size: 1.5em;
+    color: lightgray;
+    font-weight: bolder;
+    position: relative;
+}
+
+#homeButton:hover {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Sub Navigation Bar*/
+
+.subNavbar {
+    background-color: #437C9D;
+}
+
+.subNavContent {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+}
+
+.subNavbar .subNavContent li {
+    position: relative;
+    display: inline;
+    list-style-type: none;
+}
+
+.subNavbar a {
+    position: relative;
+    top: 5px;
+    padding: 12px;
+    color: white;
+    left: -5px;
+}
+
+.subNavbar li a:hover {
+    background-color: #3D718F;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* positioning for page content */
+
+.contentMid {
+    text-align: center;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px 40px 60px 40px;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+}
+
+
+/**/
+
+.gearContent {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gearContent .accordionHeader {
+    background-color: #d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 100px;
+}
+
+.gearContent .accordionHeader#outerwearHeader {
+    /*background-image:url("../Images/outerwearbrands.jpg");*/
+    background-repeat: no-repeat;
+}
+
+.accordionHeader span {
+    position: relative;
+    top: 20px;
+    font-weight: bolder;
+    color: black;
+    font-size: 3em;
+}
+
+.accordionContent {
+    display: none;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Gear page Images */
+
+.Outerwear {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+.Snowboard {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Bindings {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Boots {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Slopes page Images */
+
+.Location {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Slopes {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Forum Page */
+
+.forumContent {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.forumboxtitle {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.forumComment table,
+td,
+th {
+    border: 1px solid black;
+}
+
+
+/* Membership Page */
+
+.signinpage {
+    width: 360px;
+    padding: 100px 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #3D718F;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #154560;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #3D718F;
+    text-decoration: none;
+}
+
+.signintitle {
+    color: #3D718F;
+    font-weight: bold;
+}
+
+#bodysignin .contentMid {
+    background: #3D718F;
+    background: linear-gradient(to left, #3D718F, #154560);
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* footer */
+
+.footer {
+    position: static;
+    bottom: 0;
+    padding: 20px;
+    background-color: #606466;
+    color: lightgray;
+    clear: both;
+    width: 100%;
+}
+
+.footerContent {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* new home content */
+
+#mission {
+
+  overflow: auto;
+  clear: both;
+  margin: 0 auto;
+  width: 75%;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+#mission-image {
+  margin: 0;
+  float: right;
+  margin-right: 50px;
+}
+
+#mission-head {
+  text-align: center;
+  width: 100%;
+  ;
+  padding-top: 70px;
+  margin: 0;
+}
+
+.sections {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+}
+
+.clickable {
+  width: 300px;
+  height: 300px;
+}
+
+#section-gear {
+  background-image: url("../Images/gifs/tailgrabStill.gif");
+  float: left;
+
+}
+
+#section-gear:hover{
+  background-image: url("../Images/gifs/tailgrab.gif");
+  opacity: 0.3;
+}
+
+#section-slopes {
+  background-image: url("../Images/gifs/jumpStill.gif");
+  float: right;
+}
+
+#section-slopes:hover {
+  background-image: url("../Images/gifs/jump.gif");
+  opacity: 0.3;
+}
+
+#section-about {
+  background-image: url("../Images/gifs/cliffStill.gif");
+  float: left;
+}
+
+#section-about:hover {
+  background-image: url("../Images/gifs/cliff.gif");
+  opacity: 0.3;
+}
+
+.section-header {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#gear-paragraph {
+  float: right;
+  width: 400px;
+  margin-top: 20px;
+}
+
+#slopes-paragraph {
+    float: left;
+    width: 400px;
+    margin-top: 20px;
+}
+
+#about-paragraph {
+  float: right;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.sub-contain {
+  width: 960px;
+  height: 400px;
+}
+
+#missionicon {
+    width: 220px;
+    height: 220px;
+    display: block;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#banner-phrase {
+    background-color: rgba(220, 220, 220);
+    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+    letter-spacing: 3.5px;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+}
+
+.contentMid .col {
+  margin-top: 60px;
+}
+
+.container {
+  padding: 40px 0 40px;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.slide-img {
+  margin: 0 auto;
+  max-width: 500px;
+  max-height: 500px;
+  padding-right: 10px;
+}
+
+.img-r {
+  margin: 0 auto;
+  max-width: 500px;
+  max-height: 500px;
+  padding-left: 10px;
+}
+
+#gallery {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
