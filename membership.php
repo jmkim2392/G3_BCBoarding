@@ -102,9 +102,9 @@
             <div class ="signinForm">
             <form class="loginpage" name="loginpage" onsubmit="return loginValidate()" action="login.php" method="post">
                 <p class="signintitle"> Log-In</p>
-                <input type="text" id="logUsername" placeholder="Username" /> 
+                <input name="login" type="text" id="logUsername" placeholder="Username" /> 
                 <div  class="errorMessage" id="errUsernameLog"></div>
-                <input type="password" id="logPass" placeholder="Password" /> 
+                <input name="password" type="password" id="logPass" placeholder="Password" /> 
                <div  class="errorMessage" id="errPassLog"></div>
                 <input class="submit" type="submit" value="Login"> </form>
            </div>

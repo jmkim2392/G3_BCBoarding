@@ -33,8 +33,8 @@
 	}
 	
 	//Sanitize the REQUEST values - parameters may come from GET or POST
-	$login = clean($_REQUEST['logUsername']);
-	$password = clean($_REQUEST['logPass']);
+	$login = clean($_REQUEST['login']);
+	$password = clean($_REQUEST['password']);
 	
 	//Input Validations
 	if($login == '') {
@@ -50,7 +50,7 @@
 	if($errflag) {
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 		session_write_close();
-		header("location: login_form.php");
+		header("location: membership.php");
 		exit();
 	}
 	
@@ -68,13 +68,13 @@
 			$_SESSION['SESS_FIRST_NAME'] = $member['firstname'];
 			$_SESSION['SESS_LAST_NAME'] = $member['lastname'];
 			session_write_close();
-			header("location: ".HOMEURL);
+			header("location: membership.php");
 			exit();
 		}else {
 			//Login failed
 			$errmsg_arr[] = 'Login failed';
 			$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
-			header("location: login_form.php");
+			header("location: membership.php");
 			exit();
 		}
 	}else {
