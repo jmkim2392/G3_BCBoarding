@@ -110,8 +110,7 @@
             <div class ="signinForm">
                 <?php
 			if (isLoggedIn()){
-                //Question 1a added code
-                echo 'Welcome'.$_SESSION['SESS_FIRST_NAME']. "<br/>";
+                echo $_SESSION['SESS_FIRST_NAME']. "<br/>";
 				echo '<a href="logout.php">Logout</a><br/>';
                 
                 
@@ -119,8 +118,8 @@
 				echo '<form class="loginpage" name="loginpage" onsubmit="return loginValidate()" action="login.php" method="post">';
                 echo '<p class="signintitle"> Log-In</p>';
                 echo'<input name="login" type="text" id="logUsername" placeholder="Username" />';
-                echo<div  class="errorMessage" id="errUsernameLog"></div>';
-                echo<input name="password" type="password" id="logPass" placeholder="Password" /> ';
+                echo'<div  class="errorMessage" id="errUsernameLog"></div>';
+                echo'<input name="password" type="password" id="logPass" placeholder="Password" /> ';
                echo'<div class="errorMessage" id="errPassLog"></div>';
                 echo'<input class="submit" type="submit" value="Login"> </form>';
 			}
