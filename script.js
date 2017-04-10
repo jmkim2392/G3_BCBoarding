@@ -244,6 +244,7 @@ function whistlerMap() {
      });
  });
 
+
 /* new post button */
  $(document).ready(function () {
      $(".newPost").click(function () {
