@@ -100,13 +100,23 @@
                     <input class="submit" type="submit" value="Register"> </form>
             </div>
             <div class ="signinForm">
-            <form class="loginpage" name="loginpage" onsubmit="return loginValidate()" action="login.php" method="post">
+                <?php
+			if (isLoggedIn()){
+                //Question 1a added code
+                echo 'Welcome'.$_SESSION['SESS_FIRST_NAME']. "<br/>";
+				echo '<a href="logout.php">Logout</a><br/>';
+                
+                
+			} else {
+				echo '<form class="loginpage" name="loginpage" onsubmit="return loginValidate()" action="login.php" method="post">
                 <p class="signintitle"> Log-In</p>
                 <input name="login" type="text" id="logUsername" placeholder="Username" /> 
                 <div  class="errorMessage" id="errUsernameLog"></div>
                 <input name="password" type="password" id="logPass" placeholder="Password" /> 
                <div  class="errorMessage" id="errPassLog"></div>
-                <input class="submit" type="submit" value="Login"> </form>
+                <input class="submit" type="submit" value="Login"> </form>';
+			}
+		?>
            </div>
         </div>
     </div>
