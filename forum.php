@@ -100,7 +100,7 @@ while($rows=mysqli_fetch_array($result)){ // Start looping table row
 ?>
 <tr>
 <td bgcolor="#FFFFFF"><?php echo $rows['id']; ?></td>
-<td bgcolor="#FFFFFF"><?php echo $rows['detail']; ?></td>
+<td bgcolor="#FFFFFF"><?php echo $rows['topic']; ?></td>
     
 <td align="center" bgcolor="#FFFFFF"><?php echo $rows['firstname'] . " " . $rows['lastname']; ?></td>
 
