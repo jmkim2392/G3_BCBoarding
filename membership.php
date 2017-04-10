@@ -110,7 +110,7 @@
             <div class ="signinForm">
                 <?php
 			if (isLoggedIn()){
-                echo $_SESSION['SESS_FIRST_NAME']. "<br/>";
+                echo 'Welcome'.$_SESSION['SESS_FIRST_NAME']. "<br/>";
 				echo '<a href="logout.php">Logout</a><br/>';
                 
                 
