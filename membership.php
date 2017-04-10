@@ -60,8 +60,8 @@
                         <li><a href="about_us.html">About us</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="forum.html"><span class="glyphicon glyphicon-user"></span> forum</a></li>
-                        <li><a href="membership.html"><span class="glyphicon glyphicon-log-in"></span> register</a></li>
+                        <li><a href="forum.php"><span class="glyphicon glyphicon-user"></span> forum</a></li>
+                        <li><a href="membership.php"><span class="glyphicon glyphicon-log-in"></span> register</a></li>
                     </ul>
                 </div>
             </div>

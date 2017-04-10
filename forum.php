@@ -1,7 +1,5 @@
 <?php
 	require_once('config.php');
-require_once('auth.php');
-
 	// Connect to server and select database.
 	($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST,  DB_USER,  DB_PASSWORD))or die("cannot connect");
 	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB");
@@ -66,8 +64,8 @@ require_once('auth.php');
                         <li><a href="about_us.html">About us</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="forum.html"><span class="glyphicon glyphicon-user"></span> Forum</a></li>
-                        <li><a href="membership.html"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+                        <li><a href="forum.php"><span class="glyphicon glyphicon-user"></span> Forum</a></li>
+                        <li><a href="membership.php"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
                     </ul>
                 </div>
             </div>
