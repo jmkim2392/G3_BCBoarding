@@ -108,13 +108,13 @@
                 
                 
 			} else {
-				echo '<form class="loginpage" name="loginpage" onsubmit="return loginValidate()" action="login.php" method="post">
-                <p class="signintitle"> Log-In</p>
-                <input name="login" type="text" id="logUsername" placeholder="Username" /> 
-                <div  class="errorMessage" id="errUsernameLog"></div>
-                <input name="password" type="password" id="logPass" placeholder="Password" /> 
-               <div  class="errorMessage" id="errPassLog"></div>
-                <input class="submit" type="submit" value="Login"> </form>';
+				echo '<form class="loginpage" name="loginpage" onsubmit="return loginValidate()" action="login.php" method="post">';
+                echo '<p class="signintitle"> Log-In</p>';
+                echo'<input name="login" type="text" id="logUsername" placeholder="Username" />';
+                echo<div  class="errorMessage" id="errUsernameLog"></div>';
+                echo<input name="password" type="password" id="logPass" placeholder="Password" /> ';
+               echo'<div class="errorMessage" id="errPassLog"></div>';
+                echo'<input class="submit" type="submit" value="Login"> </form>';
 			}
 		?>
            </div>
