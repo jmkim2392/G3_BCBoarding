@@ -14,6 +14,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="script.js" type="text/javascript">
     </script>
+   <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOSHUaFZfck&callback=initMap">
+</script>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC%7CShadows+Into+Light" rel="stylesheet"> </head>
 
 <body>
@@ -58,8 +61,23 @@
     <!-- content middle -->
     <div class="contentMid">
         <div class="row">
-            <div class="testing"><p class="BigWhiteContent">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
-                <p class="CypressContent">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.3323423423423423423423</p>
+            
+                <div class="BigWhiteContent slopesContent">
+                    <button class="closeBtn"></button>
+                    <div class="row">
+                        <div class="col-sm-4" id="bigWhiteMap"></div>
+                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                    </div>
+                </div>
+                
+                <div class="CypressContent slopesContent">
+                    <button class="closeBtn"></button>
+                    <div class="row">
+                        <div class="col-sm-4" id="cypressMap"></div>
+                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                    </div>
+                </div>
+                
             <div class="col-md-6  SlopesCard BigWhite"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/BigWhite.jpg" alt="LocationMap">
                 <p class="SlopesText">Big White</p>
                 <p class="SlopesPreview">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
@@ -68,24 +86,54 @@
                 <p class="SlopesText">Cypress</p>
                 <p class="SlopesPreview">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
             </div>
-                </div>
+                
         </div>
         <div class="row">
-            <div class="col-md-6 SlopesCard"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/Grouse.png" alt="LocationMap">
+             <div class="grouseContent slopesContent">
+                    <button class="closeBtn"></button>
+                    <div class="row">
+                        <div class="col-sm-4" id="grouseMap"></div>
+                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                    </div>
+                </div>
+                
+                <div class="seymourContent slopesContent">
+                    <button class="closeBtn"></button>
+                    <div class="row">
+                        <div class="col-sm-4" id="seymourMap"></div>
+                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                    </div>
+                </div>
+            <div class="col-md-6 SlopesCard Grouse"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/Grouse.png" alt="LocationMap">
                 <p class="SlopesText">Grouse</p>
                 <p class="SlopesPreview">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
             </div>
-            <div class="col-md-6 SlopesCard"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/Seymour.jpg" alt="LocationMap">
+            <div class="col-md-6 SlopesCard Seymour"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/Seymour.jpg" alt="LocationMap">
                 <p class="SlopesText">Seymour</p>
                 <p class="SlopesPreview">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 SlopesCard"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/SunPeaks1.jpg" alt="LocationMap">
+            <div class="sunPeaksContent slopesContent">
+                    <button class="closeBtn"></button>
+                    <div class="row">
+                        <div class="col-sm-4" id="sunPeaksMap"></div>
+                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                    </div>
+                </div>
+                
+                <div class="whistlerContent slopesContent">
+                    <button class="closeBtn"></button>
+                    <div class="row">
+                        <div class="col-sm-4" id="whistlerMap"></div>
+                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                    </div>
+                </div>
+            <div class="col-md-6 SlopesCard SunPeaks"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/SunPeaks1.jpg" alt="LocationMap">
                 <p class="SlopesText">Sun Peaks</p>
                 <p class="SlopesPreview">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
             </div>
-            <div class="col-md-6 SlopesCard"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/Whistler1.jpg" alt="LocationMap">
+            <div class="col-md-6 SlopesCard Whistler"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/Whistler1.jpg" alt="LocationMap">
                 <p class="SlopesText">Whistler</p>
                 <p class="SlopesPreview">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
             </div>

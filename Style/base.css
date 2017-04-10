@@ -91,35 +91,35 @@
     /* banner for each sub page */
     
     .bannerGear {
-        background-image: url("../Images/snowboards.jpg");
+        background-image: url("../Images/gearBanner2.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 500px;
     }
     
     .bannerAbout {
-        background-image: url("../Images/lodge.jpeg");
+        background-image: url("../Images/banner5.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 500px;;
     }
     
     .bannerSlopes {
-        background-image: url("../Images/mountain1.jpg");
+        background-image: url("../Images/mountain3.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 500px;
     }
     
     .bannerForum {
-        background-image: url("../Images/lifts.jpg");
+        background-image: url("../Images/banner6.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 500px;
     }
     
     .bannerMember {
@@ -224,13 +224,26 @@
         color: black;
         font-size: 3em;
     }
-    
-    .accordionContent {
+     .necessitiesContent .accordionContent {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .accessoriesContent .accordionContent {
         display: none;
         max-width: 950px;
         margin-left: auto;
         margin-right: auto;
     }
+.shopsContent .accordionContent {
+
+        display: none;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto
+}
+
     /* Gear page Images */
     
     .Outerwear {
@@ -261,6 +274,27 @@
         max-width: 100%;
         height: auto;
     }
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 160px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#backToTop:hover {
+  background-color: white;
+    color:black;
+    border:solid;
+}
+
     /* Slopes page Images */
     
     .Location {
@@ -302,25 +336,126 @@
         right: 25px;
         display: none;
     }
-    
+.closeBtn{
+    position:absolute;
+    right:-60px;
+    width:52px;
+    height:52px;
+    background-image:url("../Images/Slopes/close2.png");
+    background-repeat: no-repeat;
+     border: none;
+  outline: none;
+    background-color:transparent;
+}    
+.closeBtn:hover {
+    background-image:url("../Images/Slopes/close3.png");
+}
     .BigWhiteContent {
-        display:none;
+        display:none; 
         background-color:white;
+        border: solid;
+        border-radius: 25px;
+        padding:15px;
+        z-index:0;
+        position:absolute;
+    width:100%;
+    top:145px;
 }
 
     .CypressContent {
-        display:none;
-          background-color:white;
-        
-}
-
-.testing p {
-    position:absolute;
+            display:none; 
+        background-color:white;
+        border: solid;
+        border-radius: 25px;
+        padding:15px;
+        z-index:0;
+        position:absolute;
     width:100%;
     top:145px;
-    z-index: 1;
+}
+.grouseContent{
+    display:none; 
+        background-color:white;
+        border: solid;
+        border-radius: 25px;
+        padding:15px;
+        z-index:0;
+        position:absolute;
+    width:100%;
+    top:630px;
+}
+.seymourContent{
+    display:none; 
+        background-color:white;
+        border: solid;
+        border-radius: 25px;
+        padding:15px;
+        z-index:0;
+        position:absolute;
+    width:100%;
+    top:630px;
 }
 
+.sunPeaksContent{
+    display:none; 
+        background-color:white;
+        border: solid;
+        border-radius: 25px;
+        padding:15px;
+        z-index:0;
+        position:absolute;
+    width:100%;
+    top:1110px;
+}
+
+.whistlerContent{
+    display:none; 
+        background-color:white;
+        border: solid;
+        border-radius: 25px;
+        padding:15px;
+        z-index:0;
+        position:absolute;
+    width:100%;
+   top:1110px;
+}
+
+
+#googleMap {
+     height: 310px;
+    width:310px;
+margin-left:15px;
+}
+#bigWhiteMap {
+       height: 310px;
+    width:310px;
+margin-left:15px;
+}
+#cypressMap {
+       height: 310px;
+    width:310px;
+margin-left:15px;
+}
+#grouseMap {
+    height: 310px;
+    width:310px;
+margin-left:15px;
+}
+#seymourMap {
+      height: 310px;
+    width:310px;
+margin-left:15px;
+}
+#sunPeaksMap {
+     height: 310px;
+    width:310px;
+margin-left:15px;
+}
+#whistlerMap {
+   height: 310px;
+    width:310px;
+margin-left:15px;
+}
 
     /* Forum Page */
     
@@ -360,6 +495,11 @@
     }
     /* Membership Page */
     
+.bannerMember .contentMid {
+    top:100px;
+}
+
+
     .signinpage {
         width: 360px;
         padding: 100px 0 0;
