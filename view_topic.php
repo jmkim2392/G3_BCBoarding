@@ -131,7 +131,8 @@ while($rows=mysqli_fetch_array($result2)){
                         <tr>
                             <td width="18%" bgcolor="#F8F7F1"><strong>Name</strong></td>
                             <td width="5%" bgcolor="#F8F7F1">:</td>
-                            <td width="77%" bgcolor="#F8F7F1"></td>
+                            <td width="77%" bgcolor="#F8F7F1">
+                                <?php echo $rows['firstname'] . " " . $rows['lastname']; ?></td>
                         </tr>
                         <tr>
                             <td bgcolor="#F8F7F1"><strong>Response</strong></td>
