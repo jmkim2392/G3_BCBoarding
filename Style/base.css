@@ -226,6 +226,8 @@
 #indexContent {
     border-top: double 3px grey;
    border-bottom: double 3px grey;
+    padding-left: 50px;
+ padding-right: 50px;
 }
 
 .contentMid .col {
