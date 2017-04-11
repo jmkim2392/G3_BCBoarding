@@ -15,17 +15,29 @@
              $(".accordionContent").hide(500, "swing")
          }
      });
+     $('a[href^="#home-body"]').on('click', function (event) {
+         var target = $($(this).attr('href'));
+         if (target.length) {
+             event.preventDefault();
+             $('html, body').animate({
+                 scrollTop: target.offset().top
+             }, 1000);
+         }
+     });
  });
+function scrollTo() {
+  document.getElementById("home-body").scrollIntoView();
+}
+
  /* Slopes jquery */
- /*change hover to click and make close button*/
-$(document).ready(function () {
+ $(document).ready(function () {
      $(".SlopesCard").hover(function () {
          $(this).find(".SlopesCardImg").fadeTo(300, 0.2);
      }, function () {
          $(this).find(".SlopesCardImg").fadeTo(100, 1);
      });
  });
-$(document).ready(function () {
+ $(document).ready(function () {
      $(".BigWhite").click(function () {
          $(".BigWhiteContent").fadeTo(300, 1);
          $(".BigWhiteContent").css({
@@ -34,7 +46,7 @@ $(document).ready(function () {
          bigWhiteMap();
      });
  });
-$(document).ready(function () {
+ $(document).ready(function () {
      $(".Cypress").click(function () {
          $(".CypressContent").fadeTo(300, 1);
          $(".CypressContent").css({
@@ -43,7 +55,7 @@ $(document).ready(function () {
          cypressMap();
      });
  });
-$(document).ready(function () {
+ $(document).ready(function () {
      $(".Grouse").click(function () {
          $(".grouseContent").fadeTo(300, 1);
          $(".grouseContent").css({
@@ -52,7 +64,7 @@ $(document).ready(function () {
          grouseMap();
      });
  });
-$(document).ready(function () {
+ $(document).ready(function () {
      $(".Seymour").click(function () {
          $(".seymourContent").fadeTo(300, 1);
          $(".seymourContent").css({
@@ -61,7 +73,7 @@ $(document).ready(function () {
          seymourMap();
      });
  });
-$(document).ready(function () {
+ $(document).ready(function () {
      $(".SunPeaks").click(function () {
          $(".sunPeaksContent").fadeTo(300, 1);
          $(".sunPeaksContent").css({
@@ -70,7 +82,7 @@ $(document).ready(function () {
          sunPeaksMap();
      });
  });
-$(document).ready(function () {
+ $(document).ready(function () {
      $(".Whistler").click(function () {
          $(".whistlerContent").fadeTo(300, 1);
          $(".whistlerContent").css({
@@ -79,7 +91,6 @@ $(document).ready(function () {
          whistlerMap();
      });
  });
-
  /* Google Map */
  function bigWhiteMap() {
      var centermap = {
@@ -106,9 +117,10 @@ $(document).ready(function () {
          , map: map
      });
  }
-function cypressMap() {
+
+ function cypressMap() {
      var centermap = {
-       lat: 49.3959
+         lat: 49.3959
          , lng: -123.2046
      };
      var cypress = {
@@ -131,7 +143,8 @@ function cypressMap() {
          , map: map
      });
  }
-function grouseMap() {
+
+ function grouseMap() {
      var centermap = {
          lat: 49.3722
          , lng: -123.0996
@@ -156,9 +169,10 @@ function grouseMap() {
          , map: map
      });
  }
-function seymourMap() {
+
+ function seymourMap() {
      var centermap = {
-      lat: 49.3654
+         lat: 49.3654
          , lng: -122.9483
      };
      var seymour = {
@@ -181,9 +195,10 @@ function seymourMap() {
          , map: map
      });
  }
-function sunPeaksMap() {
+
+ function sunPeaksMap() {
      var centermap = {
-  lat: 50.8844
+         lat: 50.8844
          , lng: -119.8859
      };
      var sunPeaks = {
@@ -206,9 +221,10 @@ function sunPeaksMap() {
          , map: map
      });
  }
-function whistlerMap() {
+
+ function whistlerMap() {
      var centermap = {
-       lat: 50.1162
+         lat: 50.1162
          , lng: -122.9574
      };
      var whistler = {
@@ -231,9 +247,10 @@ function whistlerMap() {
          , map: map
      });
  }
-function westEndMap() {
+
+ function westEndMap() {
      var centermap = {
-      lat: 49.2680
+         lat: 49.2680
          , lng: -123.1447
      };
      var westEnd = {
@@ -256,9 +273,10 @@ function westEndMap() {
          , map: map
      });
  }
-function northVanMap() {
+
+ function northVanMap() {
      var centermap = {
-   lat: 49.3280
+         lat: 49.3280
          , lng: -123.0725
      };
      var northVan = {
@@ -285,7 +303,6 @@ function northVanMap() {
  window.onscroll = function () {
      scrollFunction()
  };
-
  /* Close button */
  $(document).ready(function () {
      $(".closeBtn").click(function () {
@@ -295,9 +312,7 @@ function northVanMap() {
          $(this).parent().hide();
      });
  });
-
-
-/* new post button */
+ /* new post button */
  $(document).ready(function () {
      $(".newPost").click(function () {
          $(this).parent().find(".forumContent").css({
@@ -317,8 +332,6 @@ function northVanMap() {
          document.getElementById("backToTop").style.display = "none";
      }
  }
-
-
  // When the user clicks on the button, scroll to the top of the document
  function topFunction() {
      document.body.scrollTop = 0;
@@ -338,192 +351,216 @@ function northVanMap() {
      });
  });
  /* Form validation for Membership */
-function testfname() {
+ function testfname() {
      var nameRegex = new RegExp(/[a-zA-Z]$/);
-    if ($("#fname").val().match(nameRegex)) {
-        
-        return true;
-    } else {
-        return false;
-    }
-}
-function testlname() {
-     var nameRegex = new RegExp(/[a-zA-Z]$/);
-    if ($("#lname").val().match(nameRegex)) {
-        
-        return true;
-    } else {
-        return false;
-    }
-}
-function testUsername() {
-     var nameRegex = new RegExp(/[a-zA-Z0-9]$/);
-    if ($("#login").val().match(nameRegex)) {
-        
-        return true;
-    } else {
-        return false;
-    }
-}
-function testPassword() {
-   
-    var regexpPass = new RegExp (/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
-    if ($("#password").val().match(regexpPass)) {
+     if ($("#fname").val().match(nameRegex)) {
          return true;
-    } else {
-       return false;
-    }
-}
-function testCPassword() {
-   
-    var regexpPass = new RegExp (/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
-    if ($("#cpassword").val().match(regexpPass)) {
-         return true;
-    } else {
-       return false;
-    }
-}
-function testEmail() {
-     var regexpEmail = new RegExp ( /\S+@\S+\.\S+/);
-     if ($("#email").val().match(regexpEmail)) {
-      return true;
      }
      else {
-          return false;
+         return false;
      }
-}
+ }
 
-function signupValidate() {
-    var fname, lname, username, password, cpassword, email
-    if (testfname()){
-        $("#errFname").html("");
-         fname = true;
-    } else {
-        $("#errFname").html("Please enter a valid first name");
-        fname = false;
-    }
-    if (testlname()){
-        $("#errLname").html("");
-         lname = true;
-    } else {
-        $("#errLname").html("Please enter a valid last name");
-        lname = false;
-    }
-    if (testUsername()){
-        $("#errUsername").html("");
-         username = true;
-    } else {
-        $("#errUsername").html("Please enter a valid username");
-        username = false;
-    }
-    if (testPassword()) {
-        $("#errPass").html("");
-        $("#passreqlist").css ({"visibility": "hidden" });
-        password = true;
-        }
-    else {
-         $("#errPass").html("Please enter a valid password");
-        $("#passreqlist").css ({"visibility": "visible" });
-        password = false;
-    }
-    if (testCPassword()) {
-        $("#errCPass").html("");
-        password = true;
-        }
-    else {
-         $("#errCPass").html("Please enter a valid password");
-        password = false;
-    }
-    if (testEmail()) {
-            $("#errEmail").html("");
-         email = true;
-    } else {
-            $("#errEmail").html("Please enter a valid email");
-         email = false;
-    } if (fname && lname && username && password && cpassword && email) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-
-function testLogUsername() {
-    var nameRegex = new RegExp(/[a-zA-Z0-9]$/);
-    if ($("#logUsername").val().match(nameRegex)) {
-        
-        return true;
-    } else {
-        return false;
-    }
-}
-function testLogPass() {
-    var regexpPass = new RegExp (/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
-    if ($("#logPass").val().match(regexpPass)) {
+ function testlname() {
+     var nameRegex = new RegExp(/[a-zA-Z]$/);
+     if ($("#lname").val().match(nameRegex)) {
          return true;
-    } else {
-       return false;
-    }
-}
+     }
+     else {
+         return false;
+     }
+ }
 
-function loginValidate() {
-    var username, password
-    if (testLogUsername() && $("#logUsername").val().length !=0){
-        $("#errUsernameLog").html("");
+ function testUsername() {
+     var nameRegex = new RegExp(/[a-zA-Z0-9]$/);
+     if ($("#login").val().match(nameRegex)) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
+
+ function testPassword() {
+     var regexpPass = new RegExp(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
+     if ($("#password").val().match(regexpPass)) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
+
+ function testCPassword() {
+     var regexpPass = new RegExp(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
+     if ($("#cpassword").val().match(regexpPass)) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
+
+ function testEmail() {
+     var regexpEmail = new RegExp(/\S+@\S+\.\S+/);
+     if ($("#email").val().match(regexpEmail)) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
+
+ function signupValidate() {
+     var fname, lname, username, password, cpassword, email
+     if (testfname()) {
+         $("#errFname").html("");
+         fname = true;
+     }
+     else {
+         $("#errFname").html("Please enter a valid first name");
+         fname = false;
+     }
+     if (testlname()) {
+         $("#errLname").html("");
+         lname = true;
+     }
+     else {
+         $("#errLname").html("Please enter a valid last name");
+         lname = false;
+     }
+     if (testUsername()) {
+         $("#errUsername").html("");
          username = true;
-         } else {
+     }
+     else {
+         $("#errUsername").html("Please enter a valid username");
+         username = false;
+     }
+     if (testPassword()) {
+         $("#errPass").html("");
+         $("#passreqlist").css({
+             "visibility": "hidden"
+         });
+         password = true;
+     }
+     else {
+         $("#errPass").html("Please enter a valid password");
+         $("#passreqlist").css({
+             "visibility": "visible"
+         });
+         password = false;
+     }
+     if (testCPassword()) {
+         $("#errCPass").html("");
+         password = true;
+     }
+     else {
+         $("#errCPass").html("Please enter a valid password");
+         password = false;
+     }
+     if (testEmail()) {
+         $("#errEmail").html("");
+         email = true;
+     }
+     else {
+         $("#errEmail").html("Please enter a valid email");
+         email = false;
+     }
+     if (fname && lname && username && password && cpassword && email) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
+
+ function testLogUsername() {
+     var nameRegex = new RegExp(/[a-zA-Z0-9]$/);
+     if ($("#logUsername").val().match(nameRegex)) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
+
+ function testLogPass() {
+     var regexpPass = new RegExp(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
+     if ($("#logPass").val().match(regexpPass)) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
+
+ function loginValidate() {
+     var username, password
+     if (testLogUsername() && $("#logUsername").val().length != 0) {
+         $("#errUsernameLog").html("");
+         username = true;
+     }
+     else {
          $("#errUsernameLog").html("Please enter a valid username");
-        username = false;
-    } if (testLogPass() && $("#logPass").val().length !=0) {
-        $("#errPassLog").html("");
-        password = true;
-        } else {
-        $("#errPassLog").html("Please enter a valid password");
-        password = false;
-        } if (username && password) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-
+         username = false;
+     }
+     if (testLogPass() && $("#logPass").val().length != 0) {
+         $("#errPassLog").html("");
+         password = true;
+     }
+     else {
+         $("#errPassLog").html("Please enter a valid password");
+         password = false;
+     }
+     if (username && password) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
  /* Forum js*/
-function testTopic() {
+ function testTopic() {
      if ($("#subject").val().length != 0) {
-        
-        return true;
-    } else {
-        return false;
-    }
-}
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
 
-function testComment() {
+ function testComment() {
      if ($.trim($("#commentBox").val()) != '') {
-        
-        return true;
-    } else {
-        return false;
-    }
-}
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
 
-function forumValidate() {
-    var subject, comment
-    if (testTopic()){
-        $("#errSubject").html("");
+ function forumValidate() {
+     var subject, comment
+     if (testTopic()) {
+         $("#errSubject").html("");
          subject = true;
-         } else {
+     }
+     else {
          $("#errSubject").html("Subject cannot be blank");
-             subject = false;
-         } if (testComment()) {
-             $("#errComment").html("");
-             comment = true;
-         } else {
-             $("#errComment").html("Comment box cannot be blank");
-             comment = false;
-         } if (subject && comment) {
-             return true;
-         } else {
-             return false;
-         }
-}
+         subject = false;
+     }
+     if (testComment()) {
+         $("#errComment").html("");
+         comment = true;
+     }
+     else {
+         $("#errComment").html("Comment box cannot be blank");
+         comment = false;
+     }
+     if (subject && comment) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
