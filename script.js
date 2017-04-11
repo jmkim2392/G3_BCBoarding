@@ -8,6 +8,8 @@
                      scrollTop: $(this).offset().top - 160
                  }, 450);
              });
+             westEndMap();
+             northVanMap();
          }
          else {
              $(".accordionContent").hide(500, "swing")
@@ -226,6 +228,56 @@ function whistlerMap() {
      });
      var marker = new google.maps.Marker({
          position: whistler
+         , map: map
+     });
+ }
+function westEndMap() {
+     var centermap = {
+      lat: 49.2680
+         , lng: -123.1447
+     };
+     var westEnd = {
+         lat: 49.2680
+         , lng: -123.1447
+     };
+     var map = new google.maps.Map(document.getElementById('westEndMap'), {
+         zoom: 18
+         , center: centermap
+         , panControl: true
+         , zoomControl: true
+         , mapTypeControl: true
+         , scaleControl: true
+         , streetViewControl: true
+         , overviewMapControl: true
+         , rotateControl: true
+     });
+     var marker = new google.maps.Marker({
+         position: westEnd
+         , map: map
+     });
+ }
+function northVanMap() {
+     var centermap = {
+   lat: 49.3280
+         , lng: -123.0725
+     };
+     var northVan = {
+         lat: 49.3280
+         , lng: -123.0725
+     };
+     var map = new google.maps.Map(document.getElementById('northVanMap'), {
+         zoom: 19
+         , center: centermap
+         , panControl: true
+         , zoomControl: true
+         , mapTypeControl: true
+         , scaleControl: true
+         , streetViewControl: true
+         , overviewMapControl: true
+         , rotateControl: true
+     });
+     var marker = new google.maps.Marker({
+         position: northVan
          , map: map
      });
  }
