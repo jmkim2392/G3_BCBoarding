@@ -620,17 +620,17 @@
 
 
 #bigWhiteMap {
-     height: 250px;
-    width:250px;
+     height: 290px;
+    width:290px;
 }
 #cypressMap {
-     height: 200px;
-    width:200px;
+     height: 290px;
+    width:290px;
 
 }
 #grouseMap {
-   height: 300px;
-    width:300px;
+   height: 290px;
+    width:290px;
 
 }
 #seymourMap {
@@ -639,13 +639,12 @@
 
 }
 #sunPeaksMap {
-     height: 300px;
-    width:300px;
-
+       height: 290px;
+    width:290px;
 }
 #whistlerMap {
-   height: 300px;
-    width:300px;
+    height: 290px;
+    width:290px;
 }
 
     /* Forum Page */
