@@ -28,47 +28,33 @@
     </head>
 
     <body>
-        <!-- navigation bar -->
-        <div class="wrap"> <span class="decor"></span>
-            <nav class="navbar navbar-inverse narvar-static-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <img class="resize" src="Images/BCBoardingLogo.png" alt="Logo"> </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="slopes.html">slopes <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="slopes.html">Whistler</a></li>
-                                    <li><a href="#">Grouse</a></li>
-                                    <li><a href="#">Seymour</a></li>
-                                    <li><a href="#">Cypress</a></li>
-                                    <li><a href="#">Big White</a></li>
-                                    <li><a href="#">Sun Peaks</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="gear.html">gears <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="gear.html">gear 1</a></li>
-                                    <li><a href="#">gear 2</a></li>
-                                    <li><a href="#">gear 3</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about_us.html">About us</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <?php
+    <!-- navigation bar -->
+    <div class="wrap"> <span class="decor"></span>
+        <nav class="navbar navbar-inverse narvar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href='slopes.php'>Slopes</a></li>
+                        <li><a href="gear.php"> Gear </a></li>
+                        <li><a href="about_us.php">About us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php
 			if (isLoggedIn()){
                 echo '<li style="color:white;" >Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
 				echo '<a href="logout.php" style="margin-top:-10px;">Logout</a><br/></li>';                
 			} ?>
-                                <li><a href="forum.php"><span class="glyphicon glyphicon-user"></span> forum</a></li>
-                                <li><a href="membership.php"><span class="glyphicon glyphicon-log-in"></span> register</a></li>
-                        </ul>
-                    </div>
+                        <li><a href="forum.php"><span class="glyphicon glyphicon-user"></span> forum</a></li>
+                        <li><a href="membership.php"><span class="glyphicon glyphicon-log-in"></span> register</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </div>
         <!-- div header-->
         <div class="bannerMember">
             <div class="contentMid">
@@ -129,23 +115,28 @@
                 </div>
             </div>
         </div>
-        <!-- footer -->
-        <div class="footer">
-            <div class="footerContent">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <!--img-->
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a </p>
-                    </div>
+       <!-- footer -->
+    <div class="footer">
+        <div class="footerContent">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>This is a comp 1536 project
+                        <br> Copyright &copy; 2017 group 3
+                        <br> All rights reserved</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Contact Us</p>
+                    <a href="gear.html"> <img class="icon" src="Images/icon/gmail.png" alt="Logo"></a>
+                    <a href="gear.html"> <img class="icon" src="Images/icon/Outlook.png" alt="Logo"></a>
+                </div>
+                <div class="col-sm-4">
+                    <p>Follow Us On </p>
+                    <a href="gear.html"><img class="icon" src="Images/icon/Facebook.png" alt="Logo"></a>
+                    <a href="gear.html"><img class="icon" src="Images/icon/Twitter.png" alt="Logo"></a>
+                    <a href="gear.html"><img class="icon" src="Images/icon/Instagram.png" alt="Logo"></a>
                 </div>
             </div>
         </div>
-    </body>
-
-    </html>
+    </div>
+</body>
+</html>

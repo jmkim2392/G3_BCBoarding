@@ -25,32 +25,23 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOS
         <nav class="navbar navbar-inverse narvar-static-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <img class="resize" src="Images/BCBoardingLogo.png" alt="Logo"> </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="slopes.html">Slopes <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="slopes.html">Whistler</a></li>
-                                <li><a href="#">Grouse</a></li>
-                                <li><a href="#">Seymour</a></li>
-                                <li><a href="#">Cypress</a></li>
-                                <li><a href="#">Big White</a></li>
-                                <li><a href="#">Sun Peaks</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="gear.html">Gear <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="gear.html">Necessities</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Shops</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about_us.html">About us</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href='slopes.php'>Slopes</a></li>
+                        <li><a href="gear.php"> Gear </a></li>
+                        <li><a href="about_us.php">About us</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="forum.html"><span class="glyphicon glyphicon-user"></span> Forum</a></li>
-                        <li><a href="membership.html"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+                        <?php
+			if (isLoggedIn()){
+                echo '<li style="color:white;" >Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
+				echo '<a href="logout.php" style="margin-top:-10px;">Logout</a><br/></li>';                
+			} ?>
+                        <li><a href="forum.php"><span class="glyphicon glyphicon-user"></span> forum</a></li>
+                        <li><a href="membership.php"><span class="glyphicon glyphicon-log-in"></span> register</a></li>
                     </ul>
                 </div>
             </div>
@@ -139,21 +130,28 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOS
             </div>
         </div>
     </div>
-    <!-- footer -->
+   <!-- footer -->
     <div class="footer">
         <div class="footerContent">
             <div class="row">
                 <div class="col-sm-4">
-                    <!--img-->
-                    <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a </p>
+                    <p>This is a comp 1536 project
+                        <br> Copyright &copy; 2017 group 3
+                        <br> All rights reserved</p>
                 </div>
                 <div class="col-sm-4">
-                    <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a </p>
+                    <p>Contact Us</p>
+                    <a href="gear.html"> <img class="icon" src="Images/icon/gmail.png" alt="Logo"></a>
+                    <a href="gear.html"> <img class="icon" src="Images/icon/Outlook.png" alt="Logo"></a>
                 </div>
                 <div class="col-sm-4">
-                    <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a </p>
+                    <p>Follow Us On </p>
+                    <a href="gear.html"><img class="icon" src="Images/icon/Facebook.png" alt="Logo"></a>
+                    <a href="gear.html"><img class="icon" src="Images/icon/Twitter.png" alt="Logo"></a>
+                    <a href="gear.html"><img class="icon" src="Images/icon/Instagram.png" alt="Logo"></a>
                 </div>
             </div>
         </div>
     </div>
 </body>
+</html>

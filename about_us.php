@@ -1,21 +1,7 @@
-<?php
-	require_once('config.php');
-	// Connect to server and select database.
-	($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST,  DB_USER,  DB_PASSWORD))or die("cannot connect");
-	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB");
-	$tbl_name="topic"; // Table name
-
-
-	$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id";
-	// ORDER BY id DESC is order result by descending
-	$result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
-    
-   <head>
+<head>
     <title>BCBoarding</title>
      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,11 +13,8 @@
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
-       <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- navigation bar -->
     <div class="wrap"> <span class="decor"></span>
@@ -61,56 +44,24 @@
         </nav>
     </div>
     <!-- div header-->
-    <div class="bannerForum"> </div>
-    <!--content-->
+    <div class="bannerAbout"> </div>
+    <!-- content middle -->
     <div class="contentMid">
-        <button onclick="topFunction()" id="backToTop" title="Go to top">Back to Top</button>
-       <div class="forumboxtitle">Community Forum Posts</div>
-        <button class="newPost">Create a new post</button>
-        <div class="forumContent">
-            <button class="closeBtn"></button>
-            <form onsubmit="return forumValidate()" action="add_topic.php"  method="post">                             
-                    <label for="topic">Subject: </label>
-                    <input name="topic" type="text" class="form-control" id="subject">
-                <div class="errorMessage" id="errSubject"></div>
-                    <label for="detail">Comment: </label>
-                    <textarea name="detail" type="text" class="form-control" rows="5" id="commentBox"> </textarea>
-                     <div class="errorMessage" id="errComment"></div>
-                <input type="submit" value="Submit"> <input type="reset" name="Submit2" value="Reset" /> </form>
-        </div>
-        <div class="forumComment">
-               <table class="forumTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
-                <tr>
-                    <th width="4%" align="center" bgcolor="#E6E6E6">#</th>
-                    <th width="53%" align="center" bgcolor="#E6E6E6">Comment</th>
-                    <th width="6%" align="center" bgcolor="#E6E6E6">Name</th>
-                    <th width="6%" align="center" bgcolor="#E6E6E6">Date/Time</th>
-                </tr>
-                   
-                <?php
-while($rows=mysqli_fetch_array($result)){ // Start looping table row
-?>
-<tr>
-<td bgcolor="#FFFFFF"><?php echo $rows['id']; ?></td>
-<td bgcolor="#FFFFFF"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><BR></td>
-<td align="center" bgcolor="#FFFFFF"><?php echo $rows['firstname'] . " " . $rows['lastname']; ?></td>
-
-<td align="center" bgcolor="#FFFFFF"><?php echo $rows['datetime']; ?></td>
-
-</tr>
-
-<?php
-// Exit looping and close connection
-}
-((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
-?>
-                
-                
-            </table>
+        <div class="row">
+            <div class="col-sm-12 aboutUsContent1"> <img class="test img-fluid" src="Images/bcit-logo.png" alt="Bindings">
+                <h3>Who We Are</h3>
+                <p> We are a team consisting of 5 BCIT CST term 1 student.</p>
+            </div>
+            <br>
+            <br>
+            <div class="col-sm-12 aboutUsContent2"> <img class="test1 img-fluid" src="Images/bindings.jpg" alt="Bindings">
+                <h3>What We Do</h3>
+                <p>The purpose of this website is to provide information on the popular winter sport, Snowboarding. The site will feature detailed information on various gears and slopes based on viewers' expertise. </p>
+            </div>
         </div>
     </div>
     <!-- footer -->
- <div class="footer">
+    <div class="footer">
         <div class="footerContent">
             <div class="row">
                 <div class="col-sm-4">
