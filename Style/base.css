@@ -667,16 +667,32 @@
         border: 1px solid black;
     }
     /* About Us */
-    
-     .aboutUsContent1 p {
-        margin-left: 300px;
-        text-align: left;
-    }
-    
-    .aboutUsContent2 p {
-        margin-right: 300px;
-        text-align: left;
-    }
+    .aboutUsContent1 {
+           text-align: justify;
+           margin-bottom: 80px;
+       }
+
+       .aboutUsContent2 {
+         text-align: justify;
+       }
+
+       #bcitlogo {
+         margin-top: 30px;
+         float: right;
+         width: 450px;
+         margin-left: 50px;
+       }
+
+       #us-Img {
+         width: 100%;
+         float: left;
+         margin-right: 50px;
+       }
+
+       #about-p2 {
+         float: left;
+       }
+
     /* Membership Page */
     
 .bannerMember .contentMid {

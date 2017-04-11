@@ -61,13 +61,27 @@
         <div class="row">
             <div class="col-sm-12 aboutUsContent1"> <img class="test img-fluid" src="Images/bcit-logo.png" alt="Bindings">
                 <h3>Who We Are</h3>
-                <p> We are a team consisting of 5 BCIT CST term 1 student.</p>
+                <p> We are a team of 5 students from the British Columbia Institute of Technology currently enrolled in the CST program.
+                  We are in our first term of the program and have been updating this website with techniques learned
+                  throughout our first web development course.  We continued to add to this website while holding group
+                   meetings in person and online.  We used A/B testing to help our design decisions and adapted
+                  our design following peer and instructor feedback.</p>
             </div>
             <br>
             <br>
             <div class="col-sm-12 aboutUsContent2"> <img class="test1 img-fluid" src="Images/bindings.jpg" alt="Bindings">
                 <h3>What We Do</h3>
-                <p>The purpose of this website is to provide information on the popular winter sport, Snowboarding. The site will feature detailed information on various gears and slopes based on viewers' expertise. </p>
+                <p>Because we are all big fans of winter sports (especially snowboarding) and we live in a spectacular city for such activities...
+                  we created this site with the purpose of it being a central page for both newcomers and returning veteran snowboarders.
+                   British Columbia is surrounded by mountains and as such, our team wanted to create an organized website highlighting our
+                    six favourite mountains: with intentions to expand this number later. <br> <br>
+                    Picking out new Snowboarding gear can be a tedious and a tricky task, so we also wanted to help guide new and returning
+                    snowboarders towards suitable gear. Since Snowboarding has overtime become more commercial and ‘image’ based, we want to
+                    use this platform as an opportunity to recommend trusted gear from reliable brands.
+                    To encourage community growth, we added a forum where all boarders (old and young) can communicate.
+                    We hope to see discussions ranging from gear reviews/mountain reviews, to tricks and tips on how to get
+                     the best experience from your trip to the mountains.  This site is to act as a central hub for snowboarders and
+                      a great starting point for those finding themselves in the city and wanting to hit the powder! </p>
             </div>
         </div>
     </div>
