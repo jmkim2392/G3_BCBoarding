@@ -306,7 +306,7 @@ function testlname() {
 }
 function testUsername() {
      var nameRegex = new RegExp(/[a-zA-Z0-9]$/);
-    if ($("#username").val().match(nameRegex)) {
+    if ($("#login").val().match(nameRegex)) {
         
         return true;
     } else {
