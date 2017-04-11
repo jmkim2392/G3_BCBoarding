@@ -57,11 +57,7 @@
                             <li><a href="about_us.html">About us</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <?php
-			if (isLoggedIn()){
-                echo '<li>Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
-				echo '<a href="logout.php">Logout</a><br/></li>';                
-			} ?>
+                            
                                 <li><a href="forum.php"><span class="glyphicon glyphicon-user"></span> forum</a></li>
                                 <li><a href="membership.php"><span class="glyphicon glyphicon-log-in"></span> register</a></li>
                         </ul>
