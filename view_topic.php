@@ -1,14 +1,22 @@
 <?php
+
+	include 'functions.php';
 	require_once('config.php');
+	session_start();
+
 	// Connect to server and select database.
 	($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST,  DB_USER,  DB_PASSWORD))or die("cannot connect");
 	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB");
 	$tbl_name="topic"; // Table name
 
+	// get value of id that sent from address bar
+	$id=$_GET['id'];
 
-	$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id";
-	// ORDER BY id DESC is order result by descending
+    //Question 1d added code
+	$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id WHERE id='$id'";
 	$result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+
+	$rows=mysqli_fetch_array($result);
 ?>
 
 <!DOCTYPE html>
@@ -73,50 +81,114 @@
     </div>
     <!--content-->
     <div class="contentMid">
-        <button onclick="topFunction()" id="backToTop" title="Go to top">Back to Top</button>
-       <div class="forumboxtitle">Community Forum Posts</div>
-        <button class="newPost">Create a new post</button>
-        <div class="forumContent">
-            <button class="closeBtn"></button>
-            <form onsubmit="return forumValidate()" action="add_topic.php"  method="post">                             
-                    <label for="topic">Subject: </label>
-                    <input name="topic" type="text" class="form-control" id="subject">
-                <div class="errorMessage" id="errSubject"></div>
-                    <label for="detail">Comment: </label>
-                    <textarea name="detail" type="text" class="form-control" rows="5" id="commentBox"> </textarea>
-                     <div class="errorMessage" id="errComment"></div>
-                <input type="submit" value="Submit"> <input type="reset" name="Submit2" value="Reset" /> </form>
-        </div>
-        <div class="forumComment">
-               <table class="forumTable" width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
-                <tr>
-                    <th width="4%" align="center" bgcolor="#E6E6E6">#</th>
-                    <th width="53%" align="center" bgcolor="#E6E6E6">Comment</th>
-                    <th width="6%" align="center" bgcolor="#E6E6E6">Name</th>
-                    <th width="6%" align="center" bgcolor="#E6E6E6">Date/Time</th>
-                </tr>
-                   
-                <?php
-while($rows=mysqli_fetch_array($result)){ // Start looping table row
+        <table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="3" cellspacing="1" bordercolor="1" bgcolor="#FFFFFF">
+                    <tr>
+                        <td bgcolor="#F8F7F1"><strong><?php echo $rows['topic']; ?></strong></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F8F7F1">
+                            <?php echo $rows['detail']; ?>
+                        </td>
+                    </tr>
+                    <tr> 
+                     <!-- Question 1d added code -->
+                        <td bgcolor="#F8F7F1"><strong>By :</strong>
+                            <?php echo $rows['firstname'] . " " . $rows['lastname']; ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F8F7F1"><strong>Date/time : </strong>
+                            <?php echo $rows['datetime']; ?>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <BR>
+    <?php
+$tbl_name2="response"; // Switch to table "response"
+
+$sql2="SELECT * FROM $tbl_name2 WHERE topic_id='$id'";
+$result2=mysqli_query($GLOBALS["___mysqli_ston"], $sql2);
+
+while($rows=mysqli_fetch_array($result2)){
 ?>
-<tr>
-<td bgcolor="#FFFFFF"><?php echo $rows['id']; ?></td>
-<td bgcolor="#FFFFFF"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><BR></td>
-<td align="center" bgcolor="#FFFFFF"><?php echo $rows['firstname'] . " " . $rows['lastname']; ?></td>
-
-<td align="center" bgcolor="#FFFFFF"><?php echo $rows['datetime']; ?></td>
-
-</tr>
-
-<?php
-// Exit looping and close connection
+        <table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+                        <tr>
+                            <td bgcolor="#F8F7F1"><strong>ID</strong></td>
+                            <td bgcolor="#F8F7F1">:</td>
+                            <td bgcolor="#F8F7F1">
+                                <?php echo $rows['id']; ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="18%" bgcolor="#F8F7F1"><strong>Name</strong></td>
+                            <td width="5%" bgcolor="#F8F7F1">:</td>
+                            <td width="77%" bgcolor="#F8F7F1"></td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#F8F7F1"><strong>Response</strong></td>
+                            <td bgcolor="#F8F7F1">:</td>
+                            <td bgcolor="#F8F7F1">
+                                <?php echo $rows['response']; ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#F8F7F1"><strong>Date/Time</strong></td>
+                            <td bgcolor="#F8F7F1">:</td>
+                            <td bgcolor="#F8F7F1">
+                                <?php echo $rows['datetime']; ?>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <?php
 }
 ((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
-?>
-                
-                
+// Question 1b added code
+     if (!isLoggedIn()) {
+        echo 'Please login to continue';
+        exit();
+     }
+    ?>
+            <BR>
+            <table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+                <tr>
+                    <form name="form1" method="post" action="add_response.php">
+                        <td>
+                            <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+                                <tr>
+                                    <td valign="top"><strong>Response</strong></td>
+                                    <td valign="top">:</td>
+                                    <td>
+                                        <textarea name="response" cols="45" rows="3" id="answer"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <input name="id" type="hidden" value="<?php echo $id; ?>">
+                                    </td>
+                                    <td>
+                                        <input type="submit" name="Submit" value="Submit">
+                                        <input type="reset" name="Submit2" value="Reset">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </form>
+                </tr>
             </table>
-        </div>
     </div>
     <!-- footer -->
     <div class="footer">
