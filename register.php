@@ -49,10 +49,6 @@
 		$errmsg_arr[] = 'Last name missing';
 		$errflag = true;
 	}
-    if($email == '') {
-		$errmsg_arr[] = 'Email missing';
-		$errflag = true;
-	}
 	if($login == '') {
 		$errmsg_arr[] = 'Login ID missing';
 		$errflag = true;
