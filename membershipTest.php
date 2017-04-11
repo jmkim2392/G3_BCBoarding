@@ -1,7 +1,17 @@
 <?php
 session_start();
 ?>
+<?php
+	include 'functions.php';
+	require_once('config.php');
+	
 
+	// Connect to server and select database.
+	($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST,  DB_USER,  DB_PASSWORD))or die("cannot connect, error: ".((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)));
+	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB, error: ".((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)));
+	$tbl_name="topic"; // Table name
+
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -87,7 +97,31 @@ session_start();
                             <input class="submit" name="Submit" type="submit" value="Register"> </form>
                     </div>
                     <div class="signinForm">
-                       
+                       <?php
+	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+		echo '<ul class="err">';
+		foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+			echo '<li>',$msg,'</li>'; 
+		}
+		echo '</ul>';
+		unset($_SESSION['ERRMSG_ARR']);
+	}
+
+			if (isLoggedIn()){
+                echo 'Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
+				echo '<a href="logout.php">Logout</a><br/>';
+                
+                
+			} else {
+				echo '<form class="loginpage" name="loginpage" onsubmit="return loginValidate()" action="login.php" method="post">';
+                echo '<p class="signintitle"> Log-In</p>';
+                echo'<input name="login" type="text" id="logUsername" placeholder="Username" />';
+                echo'<div  class="errorMessage" id="errUsernameLog"></div>';
+                echo'<input name="password" type="password" id="logPass" placeholder="Password" /> ';
+               echo'<div class="errorMessage" id="errPassLog"></div>';
+                echo'<input class="submit" type="submit" value="Login"> </form>';
+			}
+		?>
                     </div>
                 </div>
             </div>
