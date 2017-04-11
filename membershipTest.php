@@ -70,7 +70,7 @@ session_start();
                 </div>
                 <div class="form">
                     <div class="registerForm">
-                        <form class="registrationform" name="form" onsubmit="return signupValidate()" action="register.php" method="post">
+                        <form class="registrationform" name="form" action="register.php" method="post">
                             <p class="signintitle">Sign-up</p>
                             <input id="fname" name="fname" type="text" placeholder="First Name" />
                             <div class="errorMessage" id="errFname"></div>
