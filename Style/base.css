@@ -619,38 +619,33 @@
 }
 
 
-#googleMap {
-     height: 300px;
-    width:300px;
-}
 #bigWhiteMap {
-     height: 300px;
-    width:300px;
+     height: 250px;
+    width:250px;
 }
 #cypressMap {
-     height: 300px;
-    width:300px;
-margin-left:15px;
+     height: 200px;
+    width:200px;
+
 }
 #grouseMap {
    height: 300px;
     width:300px;
-margin-left:15px;
+
 }
 #seymourMap {
-     height: 300px;
-    width:300px;
-margin-left:15px;
+     height: 290px;
+    width:290px;
+
 }
 #sunPeaksMap {
      height: 300px;
     width:300px;
-margin-left:15px;
+
 }
 #whistlerMap {
    height: 300px;
     width:300px;
-margin-left:15px;
 }
 
     /* Forum Page */
