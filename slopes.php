@@ -68,7 +68,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOS
                     <button class="closeBtn"></button>
                     <div class="row">
                         <div class="col-sm-4" id="bigWhiteMap"></div>
-                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                        <div class="col-sm-8">Located 56 km from Kelowna, Big White is the third largest winter resort on our list.  Complete with 118 runs that you will rarely see closed, Big White is also a world class winter sports facility and is home to national and world cup events.  Home of the world-famous Telus park, full of tremendous jumps, rails, and other obstacles is one of its key features.  Good for all ability levels the Telus park is open both for day and night runs. </div>
                     </div>
                 </div>
                 
@@ -76,7 +76,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOS
                     <button class="closeBtn"></button>
                     <div class="row">
                         <div class="col-sm-4" id="cypressMap"></div>
-                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                        <div class="col-sm-8">First opened to the public in the early 1970s Cypress was the first resort in BC to allow and encourage snowboarding.  Unlike some of other mountains Cypress is actually built on two skiable mountains and includes the “bowl” in-between them.  Only a thirty minute drive from downtown Vancouver, Cypress is perfect for a quick adventure away from the city where you can be home for dinner.</div>
                     </div>
                 </div>
                 
@@ -95,7 +95,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOS
                     <button class="closeBtn"></button>
                     <div class="row">
                         <div class="col-sm-4" id="grouseMap"></div>
-                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                        <div class="col-sm-8">A hot spot for Vancouver locals, Grouse mountain is one of the cities most tried and true facilities.  With 26 runs half of which are lit for night skiing grouse is an easy and reliable location to visit.  If you get sick of the slopes there is a 100-seat mountain top theatre and a breathtaking view to experience onboard Grouse’s aerial tram</div>
                     </div>
                 </div>
                 
@@ -103,7 +103,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOS
                     <button class="closeBtn"></button>
                     <div class="row">
                         <div class="col-sm-4" id="seymourMap"></div>
-                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                        <div class="col-sm-8">Seymour first opened for skiing in 1938 and therefore has been a stable resort for Vancouverites for generations.  Seymour has 39 marked trails for you to explore however the regulars prefer the many unmarked routes the mountain contains.  A total of five terrain parks exist for all your freestyling needs, Seymour is great for the entire family.</div>
                     </div>
                 </div>
             <div class="col-md-6 SlopesCard Grouse"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/Grouse.png" alt="LocationMap">
@@ -120,7 +120,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOS
                     <button class="closeBtn"></button>
                     <div class="row">
                         <div class="col-sm-4" id="sunPeaksMap"></div>
-                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                        <div class="col-sm-8">Located 56 km northeast of Kamloops Sun Peaks Is known for its breathtaking postcard like sceneries. With the skiable area comprising of three mountains, Sun Peaks is a good place to spend the weekend. With both amazing scenery and thrilling slopes.  A total of 135 runs and over 40km of cross country trails litter the resort and prevent you from needing anything else to do. </div>
                     </div>
                 </div>
                 
@@ -128,7 +128,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOS
                     <button class="closeBtn"></button>
                     <div class="row">
                         <div class="col-sm-4" id="whistlerMap"></div>
-                        <div class="col-sm-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33</div>
+                        <div class="col-sm-8">Over 2 million visitors a year cannot be wrong, Whistler features the “peak 2 peak” gondola which moves between the mountain peaks of Whistler and Blackcomb mountain.  Featuring a whopping 200 runs and 37 ski lifts for all ski levels, whistler is a winter wonderland for those interested in the sport.   Also, home to both the Olympic and Whistler village, visiting whistler allows for a much more social and eventful ski trip than the other mountains.</div>
                     </div>
                 </div>
             <div class="col-md-6 SlopesCard SunPeaks"> <img class="Location img-fluid SlopesCardImg" src="Images/Slopes/SunPeaks1.jpg" alt="LocationMap">
