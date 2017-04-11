@@ -59,7 +59,7 @@
     <!-- content middle -->
     <div class="contentMid">
         <div class="row">
-            <div class="col-sm-12 aboutUsContent1"> <img class="test img-fluid" src="Images/bcit-logo.png" alt="Bindings">
+            <div class="col-sm-12 aboutUsContent1"> <img class="img-fluid" id="bcitlogo" src="Images/bcit-logo.png" alt="BCIT logo">
                 <h3>Who We Are</h3>
                 <p> We are a team of 5 students from the British Columbia Institute of Technology currently enrolled in the CST program.
                   We are in our first term of the program and have been updating this website with techniques learned
@@ -69,7 +69,8 @@
             </div>
             <br>
             <br>
-            <div class="col-sm-12 aboutUsContent2"> <img class="test1 img-fluid" src="Images/bindings.jpg" alt="Bindings">
+             <div class="col-lg-12 aboutUsContent2"> <img class="img-fluid" id="us-Img" src="Images/us.jpg" alt="Picture of group">
+              <div id="about-p2">
                 <h3>What We Do</h3>
                 <p>Because we are all big fans of winter sports (especially snowboarding) and we live in a spectacular city for such activities...
                   we created this site with the purpose of it being a central page for both newcomers and returning veteran snowboarders.
@@ -82,6 +83,7 @@
                     We hope to see discussions ranging from gear reviews/mountain reviews, to tricks and tips on how to get
                      the best experience from your trip to the mountains.  This site is to act as a central hub for snowboarders and
                       a great starting point for those finding themselves in the city and wanting to hit the powder! </p>
+                 </div>
             </div>
         </div>
     </div>
