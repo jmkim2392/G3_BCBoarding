@@ -29,16 +29,7 @@
 </head>
 
 <body>
-    <?php
-	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
-		echo '<ul class="err">';
-		foreach($_SESSION['ERRMSG_ARR'] as $msg) {
-			echo '<li>',$msg,'</li>'; 
-		}
-		echo '</ul>';
-		unset($_SESSION['ERRMSG_ARR']);
-	}
-?>
+    
    <!-- navigation bar -->
     <div class="wrap"> <span class="decor"></span>
         <nav class="navbar navbar-inverse narvar-static-top">
@@ -97,7 +88,7 @@
                 <div class="errorMessage" id="errLname"></div>
                 <input id="email" name="email" type="text"   placeholder="Email address" /> 
                 <div  class="errorMessage" id="errEmail"></div>
-                    <input  id="username" name="login" type="text" placeholder="Username"/>
+                    <input  id="login" name="login" type="text" placeholder="Username"/>
                 <div class="errorMessage" id="errUsername"></div>
                     <input id="password" name="password" type="password"  placeholder="Password" />
                <div  class="errorMessage" id="errPass"></div>
@@ -105,9 +96,20 @@
                <div  class="errorMessage" id="errCPass"></div>
                     
                 
-                    <input class="submit" type="submit" value="Register"> </form>
+                    <input class="submit" type="submit" value="Register">
+                </form>
             </div>
             <div class ="signinForm">
+                <?php
+	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+		echo '<ul class="err">';
+		foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+			echo '<li>',$msg,'</li>'; 
+		}
+		echo '</ul>';
+		unset($_SESSION['ERRMSG_ARR']);
+	}
+?>
                 <?php
 			if (isLoggedIn()){
                 echo 'Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
