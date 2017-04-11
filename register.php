@@ -78,7 +78,7 @@
 			@((mysqli_free_result($result) || (is_object($result) && (get_class($result) == "mysqli_result"))) ? true : false);
 		}
 		else {
-			die("Query failed");
+			die("Duplicate Query failed");
 		}
 	}
 	
@@ -99,6 +99,6 @@
 		header("location: login.php?login=".$login."&password=".$password);
 		exit();
 	}else {
-		die("Query failed");
+		die("Insert Query failed");
 	}
 ?>
