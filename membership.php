@@ -59,7 +59,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <?php
 			if (isLoggedIn()){
-                echo '<li>Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
+                echo '<li style="color:white;" >Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
 				echo '<a href="logout.php">Logout</a><br/></li>';                
 			} ?>
                                 <li><a href="forum.php"><span class="glyphicon glyphicon-user"></span> forum</a></li>
