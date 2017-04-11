@@ -97,7 +97,7 @@
                             <div class="errorMessage" id="errPass"></div>
                             <input id="cpassword" name="cpassword" type="password" placeholder="Re-type Password" />
                             <div class="errorMessage" id="errCPass"></div>
-                            <input class="submit" type="submit" value="Register"> </form>
+                            <input class="submit" name="Submit" type="submit" value="Register"> </form>
                     </div>
                     <div class="signinForm">
                         <?php
@@ -109,8 +109,7 @@
 		echo '</ul>';
 		unset($_SESSION['ERRMSG_ARR']);
 	}
-?>
-                            <?php
+
 			if (isLoggedIn()){
                 echo 'Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
 				echo '<a href="logout.php">Logout</a><br/>';
