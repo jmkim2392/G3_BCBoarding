@@ -60,7 +60,7 @@
                             <?php
 			if (isLoggedIn()){
                 echo '<li style="color:white;" >Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
-				echo '<a href="logout.php">Logout</a><br/></li>';                
+				echo '<a href="logout.php" style="margin-top:-10px;">Logout</a><br/></li>';                
 			} ?>
                                 <li><a href="forum.php"><span class="glyphicon glyphicon-user"></span> forum</a></li>
                                 <li><a href="membership.php"><span class="glyphicon glyphicon-log-in"></span> register</a></li>
