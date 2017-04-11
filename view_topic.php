@@ -12,7 +12,6 @@
 	// get value of id that sent from address bar
 	$id=$_GET['id'];
 
-    //Question 1d added code
 	$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id WHERE id='$id'";
 	$result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 
@@ -94,7 +93,6 @@
                         </td>
                     </tr>
                     <tr> 
-                     <!-- Question 1d added code -->
                         <td bgcolor="#F8F7F1"><strong>By :</strong>
                             <?php echo $rows['firstname'] . " " . $rows['lastname']; ?>
                         </td>
@@ -112,7 +110,7 @@
     <?php
 $tbl_name2="response"; // Switch to table "response"
 
-$sql2="SELECT * FROM $tbl_name2 WHERE topic_id='$id'";
+$sql2="SELECT * FROM $tbl_name2 JOIN members ON members.member_id = topic.member_id WHERE topic_id='$id'";
 $result2=mysqli_query($GLOBALS["___mysqli_ston"], $sql2);
 
 while($rows=mysqli_fetch_array($result2)){
@@ -132,7 +130,8 @@ while($rows=mysqli_fetch_array($result2)){
                             <td width="18%" bgcolor="#F8F7F1"><strong>Name</strong></td>
                             <td width="5%" bgcolor="#F8F7F1">:</td>
                             <td width="77%" bgcolor="#F8F7F1">
-                                <?php echo $rows['firstname'] . " " . $rows['lastname']; ?></td>
+                                <?php echo $rows['firstname'] . " " . $rows['lastname']; ?>
+                            </td>
                         </tr>
                         <tr>
                             <td bgcolor="#F8F7F1"><strong>Response</strong></td>
