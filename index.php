@@ -78,7 +78,7 @@
         <div class="row">
           <div class="col">
             <div id="section-gear" class="sections">
-              <a href="gear.html"><div class="clickable"></div></a>
+              <a href="gear.php"><div class="clickable"></div></a>
             </div>
             <div id="gear-paragraph">
               <h1 class="section-header">GEAR</h1>
@@ -92,7 +92,7 @@
           <div class="row">
             <div class="col">
             <div id="section-slopes" class="sections">
-              <a href="slopes.html"><div class="clickable"></div></a>
+              <a href="slopes.php"><div class="clickable"></div></a>
             </div>
             <div id="slopes-paragraph">
                 <h1 class="section-header">SLOPES</h1>
@@ -106,7 +106,7 @@
         <div class="row">
           <div class="col">
           <div id="section-about" class="sections">
-            <a href="about_us.html"><div class="clickable"></div></a>
+            <a href="about_us.php"><div class="clickable"></div></a>
           </div>
             <div id="about-paragraph">
             <h1 class="section-header">ABOUT</h1>
