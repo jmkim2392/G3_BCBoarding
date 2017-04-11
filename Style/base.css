@@ -17,10 +17,19 @@
 
 
 /* homepage banner */
-header {
+/*
 
-}
 
+
+
+
+
+
+Changed
+
+
+
+*/
 #home-banner {
     background-image: url("../Images/jump21.jpeg");
     background-size: cover;
@@ -29,7 +38,7 @@ header {
     min-height: 100%;
 	  background-attachment: fixed;
 	  background-position: center center;
-    clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%,0 88%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%,0 88%);
 }
 
 #home-center {
@@ -52,7 +61,6 @@ header {
 
 #home-body {
   position: relative;
-
 }
 
 
@@ -102,7 +110,6 @@ header {
 }
 
 .headers {
-    opacity: 1.5;
     color: black;
     font-size: 2.5em;
     font-weight: bold;
@@ -308,8 +315,8 @@ nav a:visited {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px 40px 60px 40px;
-    border-top: solid 1px grey;
-    border-bottom: solid 1px grey;
+    border-top: double 3px grey;
+    border-bottom: double 3px grey;
 }
 
 
@@ -507,10 +514,9 @@ th {
     margin-right: auto;
 }
 
-
+/* Home page Content */
 
 #mission {
-
   overflow: auto;
   clear: both;
   margin: 0 auto;
@@ -528,7 +534,7 @@ th {
 #mission-head {
   text-align: center;
   width: 100%;
-  ;
+  font-weight: 600;
   padding-top: 70px;
   margin: 0;
 }
@@ -547,58 +553,82 @@ th {
 }
 
 #section-gear {
-  background-image: url("../gifs/tailgrabStill.gif");
+  background-image: url("../Images/gifs/tailgrabStill.gif");
   float: left;
-
+  border-radius: 1.5%;
 }
 
 #section-gear:hover{
-  background-image: url("../gifs/tailgrab.gif");
+  background-image: url("../Images/gifs/tailgrab.gif");
   opacity: 0.3;
+  border-radius: 1.5%;
 }
 
 #section-slopes {
-  background-image: url("../gifs/jumpStill.gif");
+  background-image: url("../Images/gifs/jumpStill.gif");
   float: right;
+  border-radius: 1.5%;
 }
 
 #section-slopes:hover {
-  background-image: url("../gifs/jump.gif");
+  background-image: url("../Images/gifs/jump.gif");
   opacity: 0.3;
+  border-radius: 1.5%;
 }
 
 #section-about {
-  background-image: url("../gifs/cliffStill.gif");
+  background-image: url("../Images/gifs/cliffStill.gif");
   float: left;
+  border-radius: 1.5%;
 }
 
 #section-about:hover {
-  background-image: url("../gifs/cliff.gif");
+  background-image: url("../Images/gifs/cliff.gif");
   opacity: 0.3;
+  border-radius: 1.5%;
 }
 
 .section-header {
   text-align: center;
-  text-decoration: underline;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 #gear-paragraph {
   float: right;
-  width: 400px;
+  width: 340px;
   margin-top: 20px;
+  background-color: rgba(220,220,220, 0.1);
+  padding: 20px;
+  height: 270px;
+  border-radius: 8%;
+}
+
+.contentMid .row {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #slopes-paragraph {
     float: left;
-    width: 400px;
+    width: 340px;
     margin-top: 20px;
+    background-color: rgba(220,220,220, 0.1);
+    padding: 20px;
+    height: 270px;
+    border-radius: 8%;
 }
 
 #about-paragraph {
   float: right;
-  width: 400px;
+  width: 340px;
   margin-top: 20px;
+  background-color: rgba(220,220,220, 0.1);
+  padding: 20px;
+  height: 270px;
+  border-radius: 8%;
 }
+
 
 .sub-contain {
   width: 960px;
@@ -606,16 +636,18 @@ th {
 }
 
 #missionicon {
-    width: 220px;
-    height: 220px;
+    width: 90px;
+    height: 90px;
     display: block;
-    padding: 40px;
+    margin: 10px;
+    background-color: rgba(82, 183, 242, 0.9);
+    border: solid 2.5px rgba(220,220,220, 1);
+    border-radius: 12%;
     margin-left: auto;
     margin-right: auto
 }
 
 #banner-phrase {
-    background-color: rgba(220, 220, 220);
     font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 20px;
     letter-spacing: 3.5px;
@@ -629,7 +661,7 @@ th {
 }
 
 .container {
-  padding: 40px 0 40px;
+  padding: 60px;
   margin-bottom: 20px;
 }
 
@@ -654,6 +686,20 @@ th {
 
 #gallery {
   text-align: center;
-  text-decoration: underline;
   margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home-about {
+  font-size: 1.2em;
+}
+
+.container .col-sm-12 {
+  border-style: solid;
+  background-color: rgba(220,220,220, 0.1);
+  border-width: 1.8px;
+  padding-bottom: 55px;
+  border-color: rgba(220, 220, 220, 0.3);
+  border-radius: 3%;
 }
