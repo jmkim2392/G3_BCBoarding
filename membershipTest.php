@@ -84,7 +84,7 @@ session_start();
 		echo '</ul>';
 		unset($_SESSION['ERRMSG_ARR']);
 	}
-
+?>
                     </div>
                 </div>
             </div>
