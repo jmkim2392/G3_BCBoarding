@@ -8,61 +8,54 @@
     /* homepage banner */
     
     #home-banner {
-        background-image: url("../Images/jump21.jpeg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-    }
-    
-    #home-center {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-    }
-    
-    #banner-text {
-        background-color: rgba(220, 220, 220, 0.04);
-        font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-size: 75px;
-        text-transform: uppercase;
-        letter-spacing: 3.5px;
-        font-weight: 800;
-        color: white;
-    }
-    /* button to navigate to home content */
-    
-    #home-button {
-        border: 2px solid #fff;
-        background-color: transparent;
-        font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        letter-spacing: 2px;
-        color: #fff;
-        padding: 4px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 90%)
-    }
-    /* banner images for home headings */
-    
-    #gear {
-        background-image: url("../Images/snowboards01.jpg");
-        background-repeat: no-repeat;
-    }
-    
-    #slopes {
-        background-image: url("../Images/mountain0.jpeg");
-        background-repeat: no-repeat;
-    }
-    
-    #about {
-        background-image: url("../Images/lodge0.jpeg");
-        background-repeat: no-repeat;
-        width: 100%;
-        height: auto;
-    }
+    background-image: url("../Images/jump21.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 100%;
+	  background-attachment: fixed;
+	  background-position: center center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%,0 88%);
+}
+
+#home-center {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#banner-text {
+    background-color: rgba(220, 220, 220, 0.04);
+    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 75px;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-weight: 800;
+    color: white;
+}
+
+#home-body {
+  position: relative;
+}
+
+/* button to navigate to home content */
+
+#home-button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 90%);
+    text-decoration: none;
+}
+
+
     /* alignment for headings */
     
     .header-pic {
@@ -87,6 +80,199 @@
     .home-content {
         margin: 20px;
     }
+
+/* Home page Content */
+
+#mission {
+  overflow: auto;
+  clear: both;
+  margin: 0 auto;
+  width: 75%;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+#mission-image {
+  margin: 0;
+  float: right;
+  margin-right: 50px;
+}
+
+#mission-head {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  padding-top: 70px;
+  margin: 0;
+}
+
+.sections {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+}
+
+.clickable {
+  width: 300px;
+  height: 300px;
+}
+
+#section-gear {
+  background-image: url("../Images/gifs/tailgrabStill.gif");
+  float: left;
+  border-radius: 1.5%;
+}
+
+#section-gear:hover{
+  background-image: url("../Images/gifs/tailgrab.gif");
+  opacity: 0.3;
+  border-radius: 1.5%;
+}
+
+#section-slopes {
+  background-image: url("../Images/gifs/jumpStill.gif");
+  float: right;
+  border-radius: 1.5%;
+}
+
+#section-slopes:hover {
+  background-image: url("../Images/gifs/jump.gif");
+  opacity: 0.3;
+  border-radius: 1.5%;
+}
+
+#section-about {
+  background-image: url("../Images/gifs/cliffStill.gif");
+  float: left;
+  border-radius: 1.5%;
+}
+
+#section-about:hover {
+  background-image: url("../Images/gifs/cliff.gif");
+  opacity: 0.3;
+  border-radius: 1.5%;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#gear-paragraph {
+  float: right;
+  width: 340px;
+  margin-top: 20px;
+  background-color: rgba(220,220,220, 0.1);
+  padding: 20px;
+  height: 270px;
+  border-radius: 8%;
+}
+
+.contentMid .row {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#slopes-paragraph {
+    float: left;
+    width: 340px;
+    margin-top: 20px;
+    background-color: rgba(220,220,220, 0.1);
+    padding: 20px;
+    height: 270px;
+    border-radius: 8%;
+}
+
+#about-paragraph {
+  float: right;
+  width: 340px;
+  margin-top: 20px;
+  background-color: rgba(220,220,220, 0.1);
+  padding: 20px;
+  height: 270px;
+  border-radius: 8%;
+}
+
+
+.sub-contain {
+  width: 960px;
+  height: 400px;
+}
+
+#missionicon {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 10px;
+    background-color: rgba(82, 183, 242, 0.9);
+    border: solid 2.5px rgba(220,220,220, 1);
+    border-radius: 12%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#banner-phrase {
+    font-family: "proxima-nova", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+    letter-spacing: 3.5px;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+}
+
+.contentMid .col {
+  margin-top: 60px;
+}
+
+.container {
+  padding: 60px;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.slide-img {
+  margin: 0 auto;
+  max-width: 500px;
+  max-height: 500px;
+  padding-right: 10px;
+}
+
+.img-r {
+  margin: 0 auto;
+  max-width: 500px;
+  max-height: 500px;
+  padding-left: 10px;
+}
+
+#gallery {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home-about {
+  font-size: 1.2em;
+}
+
+.container .col-sm-12 {
+  border-style: solid;
+  background-color: rgba(220,220,220, 0.1);
+  border-width: 1.8px;
+  padding-bottom: 55px;
+  border-color: rgba(220, 220, 220, 0.3);
+  border-radius: 3%;
+}
+
+
+
     /* banner for each sub page */
     
     .bannerGear {
@@ -128,6 +314,7 @@
         background-repeat: no-repeat;
         height: 100vh;
     }
+
     /* Navigation Bar */
     
     * {

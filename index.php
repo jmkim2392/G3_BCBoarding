@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="script.js" type="text/javascript">
     </script>
 </head>
@@ -58,44 +58,109 @@
     <!-- div header-->
     <header id="home-banner">
         <div id="home-center">
-            <h1 id="banner-text">BC Boarding</h1> <a id="home-button" href="#home-body">To Page</a> </div>
+            <h1 id="banner-text">PowderLine</h1>
+            <h1 id="banner-phrase">Shredding since 2017</h1>
+            <a id="home-button" href="#home-body">To Page</a>
+        </div>
     </header>
     <!-- content middle -->
     <div id="home-body">
-        <div id="gear" class="header-pic"><a href="gear.html" class="headers">Gear</a></div>
-        <div id="slopes" class="header-pic"><a href="slopes.html" class="headers">Slopes</a></div>
-        <div class="panel">
-            <div class="contentMid">
-                <div class="row">
-                    <div class="col-md-4"> <img class="Location img-fluid" src="Images/toWhistler.JPG" alt="LocationMap"> </div>
-                    <div class="col-md-8">
-                        <h3>Location</h3>
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <h3>Slope Info</h3>
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
-                    </div>
-                    <div class="col-md-4"> <img class="Slopes img-fluid" src="Images/whistlermap.jpg" alt="Whistler Slopes"> </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Weather</h3>
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Comments</h3>
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
-                    </div>
-                </div>
+      <h1 id="mission-head">OUR MISSION</h1>
+      <img src="Images/logoBW.png" alt="mission icon" id="missionicon">
+      <div id="mission" class="home-about">
+
+          Our goal at PowderLine is to communicate with BC's Lower Mainland community and share our knowledge to the ins and outs of the
+          local snowboarding culture! Here, we share our knowledge on specific slopes and mountains, form guides about our current favourite gear,
+          and unite together an already developed extreme sport. All are welcome here, no matter the skill level, tourists and locals alike!
+      </div>
+
+      <div class="contentMid">
+        <div class="row">
+          <div class="col">
+            <div id="section-gear" class="sections">
+              <a href="gear.html"><div class="clickable"></div></a>
             </div>
+            <div id="gear-paragraph">
+              <h1 class="section-header">GEAR</h1>
+              <p class="home-about">
+                Click the picture to find out about our current snowboarding setup and learn about why we chose them. This is a
+                great place to find some inspiration if you are looking to upgrade your equipment!
+              </div>
+          </div>
         </div>
-        <div id="about" class="header-pic"><a href="about_us.html" class="headers">About Us</a></div>
-    </div>
+
+          <div class="row">
+            <div class="col">
+            <div id="section-slopes" class="sections">
+              <a href="slopes.html"><div class="clickable"></div></a>
+            </div>
+            <div id="slopes-paragraph">
+                <h1 class="section-header">SLOPES</h1>
+              <p class="home-about">
+                Click the picture to find the best slopes on our local mountains: here you will find directions and information on the lifts/resorts.
+                Show your skills in various environments!
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+          <div id="section-about" class="sections">
+            <a href="about_us.html"><div class="clickable"></div></a>
+          </div>
+            <div id="about-paragraph">
+            <h1 class="section-header">ABOUT</h1>
+            <p class="home-about">
+              Click the picture to find a little bit about us. We'll tell you what we like about snowboarding, and if you want
+              to get to know us, this is where to go!
+            </p>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 id="gallery">OUR GALLERY</h1>
+            <div id="home-slide" class="carousel slide" data-ride="carousel" data-interval="5300">
+
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                  <div class="col-md-6">
+                    <img src="images/slide1.jpg" alt="slide1 viewpoint" class="slide-img"/>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="images/slide2.jpg" alt="slide2 sun" class="img-r"/>
+                  </div>
+                </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                  <div class="col-md-6">
+                    <img src="images/slide3.jpg" alt="slide3 skyline" class="slide-img"/>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="images/slide6.jpg" alt="slide4 slope" class="img-r"/>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <a class="left carousel-control" href="#home-slide" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              </a>
+              <a class="right carousel-control" href="#home-slide" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- footer -->
     <div class="footer">
         <div class="footerContent">
