@@ -22,6 +22,18 @@ session_start();
     </head>
 
     <body>
+        
+<?php
+	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+		echo '<ul class="err">';
+		foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+			echo '<li>',$msg,'</li>'; 
+		}
+		echo '</ul>';
+		unset($_SESSION['ERRMSG_ARR']);
+	}
+?>
+        
     <!-- navigation bar -->
     <div class="wrap"> <span class="decor"></span>
         <nav class="navbar navbar-inverse narvar-static-top">
@@ -75,16 +87,7 @@ session_start();
                             <input class="submit" name="Submit" type="submit" value="Register"> </form>
                     </div>
                     <div class="signinForm">
-                        <?php
-	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
-		echo '<ul class="err">';
-		foreach($_SESSION['ERRMSG_ARR'] as $msg) {
-			echo '<li>',$msg,'</li>'; 
-		}
-		echo '</ul>';
-		unset($_SESSION['ERRMSG_ARR']);
-	}
-?>
+                       
                     </div>
                 </div>
             </div>
