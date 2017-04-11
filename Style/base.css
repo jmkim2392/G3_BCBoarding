@@ -223,6 +223,11 @@
     text-align: center;
 }
 
+#indexContent {
+    border-top: double 3px grey;
+   border-bottom: double 3px grey;
+}
+
 .contentMid .col {
   margin-top: 60px;
 }

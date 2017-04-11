@@ -74,7 +74,7 @@
           and unite together an already developed extreme sport. All are welcome here, no matter the skill level, tourists and locals alike!
       </div>
 
-      <div class="contentMid">
+      <div id="indexContent" class="contentMid">
         <div class="row">
           <div class="col">
             <div id="section-gear" class="sections">
