@@ -1,17 +1,7 @@
 <?php
 session_start();
 ?>
-<?php
-	include 'functions.php';
-	require_once('config.php');
-	
 
-	// Connect to server and select database.
-	($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST,  DB_USER,  DB_PASSWORD))or die("cannot connect, error: ".((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)));
-	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB, error: ".((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)));
-	$tbl_name="topic"; // Table name
-
-?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -47,11 +37,6 @@ session_start();
                         <li><a href="about_us.php">About us</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <?php
-			if (isLoggedIn()){
-                echo '<li style="color:white;" >Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
-				echo '<a href="logout.php" style="margin-top:-10px;">Logout</a><br/></li>';                
-			} ?>
                         <li><a href="forum.php"><span class="glyphicon glyphicon-user"></span> forum</a></li>
                         <li><a href="membership.php"><span class="glyphicon glyphicon-log-in"></span> register</a></li>
                     </ul>
@@ -100,21 +85,6 @@ session_start();
 		unset($_SESSION['ERRMSG_ARR']);
 	}
 
-			if (isLoggedIn()){
-                echo 'Welcome '.$_SESSION['SESS_FIRST_NAME']. "<br/>";
-				echo '<a href="logout.php">Logout</a><br/>';
-                
-                
-			} else {
-				echo '<form class="loginpage" name="loginpage" onsubmit="return loginValidate()" action="login.php" method="post">';
-                echo '<p class="signintitle"> Log-In</p>';
-                echo'<input name="login" type="text" id="logUsername" placeholder="Username" />';
-                echo'<div  class="errorMessage" id="errUsernameLog"></div>';
-                echo'<input name="password" type="password" id="logPass" placeholder="Password" /> ';
-               echo'<div class="errorMessage" id="errPassLog"></div>';
-                echo'<input class="submit" type="submit" value="Login"> </form>';
-			}
-		?>
                     </div>
                 </div>
             </div>
