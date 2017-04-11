@@ -131,20 +131,20 @@
                 <div class="item active">
                   <div class="row">
                   <div class="col-md-6">
-                    <img src="images/slide1.jpg" alt="slide1 viewpoint" class="slide-img"/>
+                    <img src="Images/slide1.jpg" alt="slide1 viewpoint" class="slide-img"/>
                   </div>
                   <div class="col-md-6">
-                    <img src="images/slide2.jpg" alt="slide2 sun" class="img-r"/>
+                    <img src="Images/slide2.jpg" alt="slide2 sun" class="img-r"/>
                   </div>
                 </div>
                 </div>
                 <div class="item">
                   <div class="row">
                   <div class="col-md-6">
-                    <img src="images/slide3.jpg" alt="slide3 skyline" class="slide-img"/>
+                    <img src="Images/slide3.jpg" alt="slide3 skyline" class="slide-img"/>
                   </div>
                   <div class="col-md-6">
-                    <img src="images/slide6.jpg" alt="slide4 slope" class="img-r"/>
+                    <img src="Images/slide6.jpg" alt="slide4 slope" class="img-r"/>
                   </div>
                 </div>
                 </div>
