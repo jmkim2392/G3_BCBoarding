@@ -453,11 +453,11 @@ function scrollTo() {
      }
      if (testCPassword()) {
          $("#errCPass").html("");
-         password = true;
+         cpassword = true;
      }
      else {
          $("#errCPass").html("Please enter a valid password");
-         password = false;
+         cpassword = false;
      }
      if (testEmail()) {
          $("#errEmail").html("");
