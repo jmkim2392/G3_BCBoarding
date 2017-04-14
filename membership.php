@@ -67,7 +67,7 @@ session_start();
                         <li>Must contain atleast 1 capital letter </li>
                         <li>Must contain atleast 1 lowercase letter</li>
                         <li>Must contain atleast 1 number </li>
-                        <li> Must contain atleast 1 special charector</li>
+                        <li> Must contain atleast 1 special character</li>
                         <li> Must contain atleast 8 characers</li>
                     </ul>
                 </div>
