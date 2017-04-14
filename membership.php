@@ -130,14 +130,14 @@ session_start();
                 </div>
                 <div class="col-sm-4">
                     <p>Contact Us</p>
-                    <a href="gear.html"> <img class="icon" src="Images/icon/gmail.png" alt="Logo"></a>
-                    <a href="gear.html"> <img class="icon" src="Images/icon/Outlook.png" alt="Logo"></a>
+                    <a href="#"> <img class="icon" src="Images/icon/gmail.png" alt="Logo"></a>
+                    <a href="#"> <img class="icon" src="Images/icon/Outlook.png" alt="Logo"></a>
                 </div>
                 <div class="col-sm-4">
                     <p>Follow Us On </p>
-                    <a href="gear.html"><img class="icon" src="Images/icon/Facebook.png" alt="Logo"></a>
-                    <a href="gear.html"><img class="icon" src="Images/icon/Twitter.png" alt="Logo"></a>
-                    <a href="gear.html"><img class="icon" src="Images/icon/Instagram.png" alt="Logo"></a>
+                    <a href="#"><img class="icon" src="Images/icon/Facebook.png" alt="Logo"></a>
+                    <a href="#"><img class="icon" src="Images/icon/Twitter.png" alt="Logo"></a>
+                    <a href="#"><img class="icon" src="Images/icon/Instagram.png" alt="Logo"></a>
                 </div>
             </div>
         </div>
