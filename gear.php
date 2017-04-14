@@ -119,21 +119,21 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFo39zzsmv0WNk7a5QCIgCNOS
                     <div class="col-sm-4" id="westEndMap"></div>
                     <div class="col-sm-8 ">
                         <h3>West End</h3>
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
+                        <p>On West 4th Avenue near Burrard and Pine Street, there is a collection of winter sport shops such as Pacific Boarder, The Boardroom, The White Room and Comor. All of these shops carry excellent quality products and usually have a wide selection of brands. Before buying anything online, its in your best interest to check these places out as they carry US only brand products. There is also a clearance store for the Boardroom which has a variety of products from previous seasons that you can purchase at a lower cost. If you're just starting out or don't have a big budget, this would be the place to go.</p>
                     </div>
                 </div>
                 <div class="row gearRow">
                     <div class="col-sm-4" id="northVanMap"></div>
                     <div class="col-sm-8">
                         <h3>North Vancouver</h3>
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
+                        <p>Similar to West End area, there are two places in North Van that has a selection of wintersport shops. On Lonsdale Ave, there is The Boardroom and North Shore Ski & Board. Also, on Marine Drive, The Destination Slope Surf Outfitters and Crystal Glide SKi & Board Services Ltd. All four of these shops are excellent places to shop for your gear. It's nice and convenient to buy online, but some of your gear like boots and outerwear is best chosen when you get to try them on.</p>
                     </div>
                 </div>
                 <div class="row gearRow">
                     <div class="col-sm-4"> <img class="Brands gearImages img-fluid" src="Images/Gear/Logo1.jpg" alt="Brands"> </div>
                     <div class="col-sm-8">
                         <h3>Others</h3>
-                        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 </p>
+                        <p>If none of those places are accessible for you, you can always shop online for anything that you need. The only downside is that for some gear like boots, you take the risk of not fitting properly or not being fully satisfied with the purchase. If so, it's a hassle to return or exchange if bought online. Other than that, online shopping is probably where you can have the widest range of selection.</p>
                     </div>
                 </div>
             </div>
