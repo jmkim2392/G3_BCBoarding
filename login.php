@@ -68,7 +68,7 @@
 			$_SESSION['SESS_FIRST_NAME'] = $member['firstname'];
 			$_SESSION['SESS_LAST_NAME'] = $member['lastname'];
 			session_write_close();
-			header("location: membership.php");
+			header("location: index.php");
 			exit();
 		}else {
 			//Login failed
